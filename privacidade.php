@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="shortcut icon" href="img/banana-favicon.png" type="image/x-icon">
     <title>Quitanda Online :: Política de Privacidade</title>
@@ -37,22 +38,22 @@
             <div class="navbar-collapse collapse">
                 <ul class="navbar-nav flex-grow-1">
                     <li class="nav-item">
-                        <a href="/index.html" class="nav-link text-white">Principal</a>
+                        <a href="index.php" class="nav-link text-white">Principal</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/contato.html" class="nav-link text-white">Contato</a>
+                        <a href="contato.php" class="nav-link text-white">Contato</a>
                     </li>
                 </ul>
                 <div class="align-self-end">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="/cadastro.html" class="nav-link text-white">Quero Me Cadastrar</a>
+                            <a href="cadastro.php" class="nav-link text-white">Quero Me Cadastrar</a>
                         </li>
                         <li class="nav-item">
                             <a href="/login.html" class="nav-link text-white">Entrar</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/carrinho.html" class="nav-link text-white">
+                            <a href="carrinho.php" class="nav-link text-white">
                                 <svg class="bi" width="24" height="24" fill="currentColor">
                                     <use xlink:href="/bi.svg#cart3" />
                                 </svg>
@@ -141,9 +142,9 @@
 
                        <a href="privacidade.html" class="text-decoration-none text-secondary">Política de
                             Privacidade</a><br>
-                       <a href="termos.html" class="text-decoration-none text-secondary">Termos de Usu</a><br>
-                       <a href="quemsomos.html" class="text-decoration-none text-secondary">Quem Somos</a><br>
-                       <a href="troca.html" class="text-decoration-none text-secondary">Troca e Devoluçôes</a>
+                       <a href="termos.php" class="text-decoration-none text-secondary">Termos de Usu</a><br>
+                       <a href="quemsomos.php" class="text-decoration-none text-secondary">Quem Somos</a><br>
+                       <a href="troca.php" class="text-decoration-none text-secondary">Troca e Devoluçôes</a>
                   </div>
 
                   <div class="col-12 col-md-4 text-center text-md-right">
@@ -170,7 +171,7 @@
         </div>
 
    </footer>
-
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 

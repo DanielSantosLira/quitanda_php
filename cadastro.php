@@ -5,7 +5,7 @@
 
      <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
-
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
      <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
      <title>Quitanda Online :: Cadastro</title>
 
@@ -127,9 +127,9 @@
                                         <div class="input-group">
                                              <input type="text" class="form-control" id="txtCEP">
                                              <span class="input-group-text p-1">
-                                                  <svg class="bi" width="24" height="24" fill="currentColor">
-                                                       <use xlink:href="/bi.svg#hourglass-split"/>
-                                                  </svg>
+                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+  <path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"/>
+</svg>
                                              </span>
                                         </div>
                                    </div>
@@ -197,9 +197,9 @@
 
                          <a href="privacidade.html" class="text-decoration-none text-secondary">Política de
                               Privacidade</a><br>
-                         <a href="termos.html" class="text-decoration-none text-secondary">Termos de Usu</a><br>
-                         <a href="quensomos.html" class="text-decoration-none text-secondary">Quem Somos</a><br>
-                         <a href="troca.html" class="text-decoration-none text-secondary">Troca e Devoluçôes</a>
+                         <a href="termos.php" class="text-decoration-none text-secondary">Termos de Usu</a><br>
+                         <a href="quensomos.php" class="text-decoration-none text-secondary">Quem Somos</a><br>
+                         <a href="troca.php" class="text-decoration-none text-secondary">Troca e Devoluçôes</a>
                     </div>
 
                     <div class="col-12 col-md-4 text-center text-md-right">
@@ -226,7 +226,7 @@
           </div>
 
      </footer>
- 
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
      <script src="\node_modules\bootstrap\dist\js\bootstrap.bundle.js"></script>
 </body>
 

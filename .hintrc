@@ -23,6 +23,11 @@
     ],
     "disown-opener": "off",
     "manifest-file-extension": "off",
-    "apple-touch-icons": "off"
+    "apple-touch-icons": "off",
+    "meta-charset-utf-8": "off",
+    "detect-css-reflows/composite": "off",
+    "detect-css-reflows/paint": "off",
+    "compat-api/css": "off",
+    "detect-css-reflows/layout": "off"
   }
 }

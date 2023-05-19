@@ -5,6 +5,7 @@
 
      <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
      <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
      <title>Quitanda Online :: Principal</title>
@@ -13,9 +14,9 @@
      <link rel="aplle-touch-icon" sizes="180x180" href="/img/favicon/aplle-touch-icon.png">
      <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
      <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
-     <link rel="manifest"  href="/img/favicon/site.webmanifest">
-     <link rel="mask-icon"  href="/img/favicon/safari-pinned-tab.sgv" color="#5bbad5">
-     <link rel="shortcut icon"  href="/img/favicon/favicon-icon">
+     <link rel="manifest" href="/img/favicon/site.webmanifest">
+     <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.sgv" color="#5bbad5">
+     <link rel="shortcut icon" href="/img/favicon/favicon-icon">
      <meta name="msapplication-TileColor" content="#da532c">
      <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
      <meta name="thame-color" content="#ffffff">
@@ -88,6 +89,7 @@
      </nav>
 
      <header class="container">
+          
 
           <div id="carouselMain" class="carousel carousel-white slide " data-ride="carousel">
 
@@ -249,7 +251,7 @@
                     <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
                          <div class="card text-center bg-light">
                               <a href="#" class="position-absolute right-0 p-2 text-danger">
-                                   <svg class="bi" width="24" height="24" fill="currentColor" >
+                                   <svg class="bi" width="24" height="24" fill="currentColor">
                                         <use xlink:href="/bi.svg#suit-heart-fill">
                                    </svg>
                               </a>
@@ -833,9 +835,9 @@
 
                          <a href="privacidade.html" class="text-decoration-none text-secondary">Política de
                               Privacidade</a><br>
-                         <a href="termos.html" class="text-decoration-none text-secondary">Termos de Usu</a><br>
-                         <a href="quemsomos.html" class="text-decoration-none text-secondary">Quem Somos</a><br>
-                         <a href="troca.html" class="text-decoration-none text-secondary">Troca e Devoluçôes</a>
+                         <a href="termos.php" class="text-decoration-none text-secondary">Termos de Usu</a><br>
+                         <a href="quemsomos.php" class="text-decoration-none text-secondary">Quem Somos</a><br>
+                         <a href="troca.php" class="text-decoration-none text-secondary">Troca e Devoluçôes</a>
                     </div>
 
                     <div class="col-12 col-md-4 text-center text-md-right">
@@ -843,8 +845,7 @@
                          <svg width="15" height="15" fill="currentColor" class="bi">
                               <use xlink:href="/bi.svg#envelope" class="text-primary">
                          </svg>
-                         E-mail:<a href="danielsplira@gmail.com"
-                              class="text-decoration-none text-secondary">danielsplira@gmail.com</a><br>
+                         E-mail:<a href="danielsplira@gmail.com" class="text-decoration-none text-secondary">danielsplira@gmail.com</a><br>
                          <svg width="15" height="15" fill="currentColor" class="bi text-danger">
                               <use xlink:href="/bi.svg#telephone">
                          </svg>
@@ -862,8 +863,8 @@
           </div>
 
      </footer>
-
-     <script src="\node_modules\bootstrap\dist\js\bootstrap.bundle.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <script src="\node_modules\bootstrap\dist\js\bootstrap.bundle.js"></script> 
 </body>
 
 </html>
