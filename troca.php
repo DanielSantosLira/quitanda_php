@@ -7,22 +7,10 @@
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
-     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+     <link rel="shortcut icon" href="img/banana-favicon.png" type="image/x-icon">
      <title>Quitanda Online :: Trocas e Devoluçôes</title>
-     <link rel="shortcut icon" href="img/banana-favicon.png" type="image/x-icon">
-     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
-     <title>Quitanda Online :: Principal</title>
-     <link rel="shortcut icon" href="img/banana-favicon.png" type="image/x-icon">
-     <link rel="shortcut icon" href="img/banana-favicon.png" type="image/x-icon">
-     <link rel="aplle-touch-icon" sizes="180x180" href="/img/favicon/aplle-touch-icon.png">
-     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
-     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
-     <link rel="manifest"  href="/img/favicon/site.webmanifest">
-     <link rel="mask-icon"  href="/img/favicon/safari-pinned-tab.sgv" color="#5bbad5">
-     <link rel="shortcut icon"  href="/img/favicon/favicon-icon">
-     <meta name="msapplication-TileColor" content="#da532c">
-     <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
-     <meta name="thame-color" content="#ffffff">
+
+
 
 
 
@@ -46,7 +34,7 @@
                     <ul class="navbar-nav flex-grow-1">
 
                          <li class="nav-item">
-                              <a href="#" class="nav-link text-white">Principal</a>
+                              <a href="index.php" class="nav-link text-white">Principal</a>
                          </li>
 
                          <li class="nav-item">
@@ -89,7 +77,7 @@
                <hr>
 
                <p>
-                   A Quitanda online utiliza tecnologia de ponta para a fabricação de seus produtos, primando pela
+                    A Quitanda online utiliza tecnologia de ponta para a fabricação de seus produtos, primando pela
                     qualidade
                     e satisfação de seus clientes. Pelo respeito e para que seja mantida a credibilidade conquistada
                     junto
@@ -113,7 +101,7 @@
                     devolução.
                </p>
                <p>
-                <strong>*ATENÇÃO:</strong> Para efetuar o processo de troca é necessário estar logado. Devolução por
+                    <strong>*ATENÇÃO:</strong> Para efetuar o processo de troca é necessário estar logado. Devolução por
                     Arrependimento/Desistência Se ao receber o produto, você resolver devolvê-lo por arrependimento,
                     deverá
                     fazê-lo em até sete dias corridos, a contar da data de recebimento.
@@ -147,7 +135,7 @@
 
           <div class="container">
 
-               <div class="row py-3">
+               <div class="row py-2">
 
                     <div class="col-12 col-md-4 text-center text-md-left text-secondary">
                          &copy;2023 - Quintanda Online Ltda Me<br>
@@ -157,11 +145,11 @@
 
                     <div class="col-12 col-md text-center">
 
-                         <a href="privacidade.html" class="text-decoration-none text-secondary">Política de
+                         <a href="privacidade.php" class="text-decoration-none text-secondary">Política de
                               Privacidade</a><br>
-                         <a href="termos.html" class="text-decoration-none text-secondary">Termos de Usu</a><br>
-                         <a href="quensomos.html" class="text-decoration-none text-secondary">Quem Somos</a><br>
-                         <a href="troca.html" class="text-decoration-none text-secondary">Troca e Devoluçôes</a>
+                         <a href="termos.php" class="text-decoration-none text-secondary">Termos de Usu</a><br>
+                         <a href="quensomos.php" class="text-decoration-none text-secondary">Quem Somos</a><br>
+                         <a href="troca.php" class="text-decoration-none text-secondary">Troca e Devoluçôes</a>
                     </div>
 
                     <div class="col-12 col-md-4 text-center text-md-right">
@@ -169,8 +157,7 @@
                          <svg width="15" height="15" fill="currentColor" class="bi">
                               <use xlink:href="/bi.svg#envelope" class="text-primary">
                          </svg>
-                         E-mail:<a href="danielsplira@gmail.com"
-                              class="text-decoration-none text-secondary">danielsplira@gmail.com</a><br>
+                         E-mail:<a href="danielsplira@gmail.com" class="text-decoration-none text-secondary">danielsplira@gmail.com</a><br>
                          <svg width="15" height="15" fill="currentColor" class="bi text-danger">
                               <use xlink:href="/bi.svg#telephone">
                          </svg>

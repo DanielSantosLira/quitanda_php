@@ -5,23 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    
     <link rel="shortcut icon" href="img/banana-favicon.png" type="image/x-icon">
     <title>Quitanda Online :: Política de Privacidade</title>
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
-     <title>Quitanda Online :: Principal</title>
-     <link rel="shortcut icon" href="img/banana-favicon.png" type="image/x-icon">
-     <link rel="shortcut icon" href="img/banana-favicon.png" type="image/x-icon">
-     <link rel="aplle-touch-icon" sizes="180x180" href="/img/favicon/aplle-touch-icon.png">
-     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
-     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
-     <link rel="manifest"  href="/img/favicon/site.webmanifest">
-     <link rel="mask-icon"  href="/img/favicon/safari-pinned-tab.sgv" color="#5bbad5">
-     <link rel="shortcut icon"  href="/img/favicon/favicon-icon">
-     <meta name="msapplication-TileColor" content="#da532c">
-     <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
-     <meta name="thame-color" content="#ffffff">
-
+    
     
 
 </head>
@@ -130,7 +117,7 @@
 
         <div class="container">
 
-             <div class="row py-3">
+             <div class="row py-2">
 
                   <div class="col-12 col-md-4 text-center text-md-left text-secondary">
                        &copy;2023 - Quintanda Online Ltda Me<br>
@@ -140,7 +127,7 @@
 
                   <div class="col-12 col-md text-center">
 
-                       <a href="privacidade.html" class="text-decoration-none text-secondary">Política de
+                       <a href="privacidade.php" class="text-decoration-none text-secondary">Política de
                             Privacidade</a><br>
                        <a href="termos.php" class="text-decoration-none text-secondary">Termos de Usu</a><br>
                        <a href="quemsomos.php" class="text-decoration-none text-secondary">Quem Somos</a><br>
@@ -172,7 +159,7 @@
 
    </footer>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+   
 </body>
 
 </html>
