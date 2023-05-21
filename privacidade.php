@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    
+
     <link rel="shortcut icon" href="img/banana-favicon.png" type="image/x-icon">
     <title>Quitanda Online :: Política de Privacidade</title>
-    
-    
+
+
 
 </head>
 
@@ -28,21 +28,22 @@
                         <a href="index.php" class="nav-link text-white">Principal</a>
                     </li>
                     <li class="nav-item">
-                        <a href="contato.php" class="nav-link text-white">Contato</a>
+                        <a href="/contato.html" class="nav-link text-white">Contato</a>
                     </li>
                 </ul>
                 <div class="align-self-end">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="cadastro.php" class="nav-link text-white">Quero Me Cadastrar</a>
+                            <a href="/cadastro.html" class="nav-link text-white">Quero Me Cadastrar</a>
                         </li>
                         <li class="nav-item">
                             <a href="/login.html" class="nav-link text-white">Entrar</a>
                         </li>
                         <li class="nav-item">
-                            <a href="carrinho.php" class="nav-link text-white">
-                                <svg class="bi" width="24" height="24" fill="currentColor">
-                                    <use xlink:href="/bi.svg#cart3" />
+                            <a href="#" class="nav-link text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-dash text-whitgh" viewBox="0 0 16 16">
+                                    <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z" />
+                                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
                                 </svg>
                             </a>
                         </li>
@@ -51,7 +52,6 @@
             </div>
         </div>
     </nav>
-
     <main>
         <div class="container">
             <h2>Política Privacidade</h2>
@@ -97,9 +97,7 @@
             <p>O usuário se compromete a fazer uso adequado dos conteúdos e da informação que o Quitanda Online oferece no site e com caráter enunciativo, mas não limitativo:</p>
             <ul>
                 <li>A) Não se envolver em atividades que sejam ilegais ou contrárias à boa fé a à ordem pública;</li>
-                <li>B) Não divulgar conteúdo ou propaganda de natureza racista, xenofóbica, <a
-                        href='https://ondeapostar.pt/'
-                        style='color: inherit;font-weight: normal;text-decoration:none;'>casas de apostas online</a>,
+                <li>B) Não divulgar conteúdo ou propaganda de natureza racista, xenofóbica, <a href='https://ondeapostar.pt/' style='color: inherit;font-weight: normal;text-decoration:none;'>casas de apostas online</a>,
                     pornografia ilegal, de apologia ao terrorismo ou contra os direitos humanos;</li>
                 <li>C) Não causar danos aos sistemas físicos (hardwares) e lógicos (softwares) do Quitanda Online, de seus fornecedores ou terceiros, para introduzir ou disseminar vírus informáticos ou quaisquer outros sistemas de hardware ou software que sejam capazes de causar danos anteriormente mencionados.</li>
             </ul>
@@ -117,49 +115,48 @@
 
         <div class="container">
 
-             <div class="row py-2">
+            <div class="row py-2">
 
-                  <div class="col-12 col-md-4 text-center text-md-left text-secondary">
-                       &copy;2023 - Quintanda Online Ltda Me<br>
-                       Rua Virtual Inexistente, 171, Compulãndia/PC<br>
-                       CNPJ 99.999.999/0001-99
-                  </div>
+                <div class="col-12 col-md-4 text-center text-md-left text-secondary">
+                    &copy;2023 - Quintanda Online Ltda Me<br>
+                    Rua Virtual Inexistente, 171, Compulãndia/PC<br>
+                    CNPJ 99.999.999/0001-99
+                </div>
 
-                  <div class="col-12 col-md text-center">
+                <div class="col-12 col-md text-center">
 
-                       <a href="privacidade.php" class="text-decoration-none text-secondary">Política de
-                            Privacidade</a><br>
-                       <a href="termos.php" class="text-decoration-none text-secondary">Termos de Usu</a><br>
-                       <a href="quemsomos.php" class="text-decoration-none text-secondary">Quem Somos</a><br>
-                       <a href="troca.php" class="text-decoration-none text-secondary">Troca e Devoluçôes</a>
-                  </div>
+                    <a href="privacidade.php" class="text-decoration-none text-secondary">Política de
+                        Privacidade</a><br>
+                    <a href="termos.php" class="text-decoration-none text-secondary">Termos de Usu</a><br>
+                    <a href="quemsomos.php" class="text-decoration-none text-secondary">Quem Somos</a><br>
+                    <a href="troca.php" class="text-decoration-none text-secondary">Troca e Devoluçôes</a>
+                </div>
 
-                  <div class="col-12 col-md-4 text-center text-md-right">
-                       <a href="contato" class="text-decoration-none text-secondary ">Contato pelo site</a><br>
-                       <svg width="15" height="15" fill="currentColor" class="bi">
-                            <use xlink:href="/bi.svg#envelope" class="text-primary">
-                       </svg>
-                       E-mail:<a href="danielsplira@gmail.com"
-                            class="text-decoration-none text-secondary">danielsplira@gmail.com</a><br>
-                       <svg width="15" height="15" fill="currentColor" class="bi text-danger">
-                            <use xlink:href="/bi.svg#telephone">
-                       </svg>
-                       Telefone:<a href="contato" class="text-decoration-none text-secondary">(19) 9 94078406</a><br>
-                       <svg width="15" height="15" fill="currentColor" class="bi text-success">
-                            <use xlink:href="/bi.svg#whatsapp">
-                       </svg>
-                       Whatsapp:<a href="contato" class="text-decoration-none text-secondary">(19) 9 94078406</a><br>
+                <div class="col-12 col-md-4 text-center text-md-right">
+                    <a href="contato" class="text-decoration-none text-secondary ">Contato pelo site</a><br>
+                    <svg width="15" height="15" fill="currentColor" class="bi">
+                        <use xlink:href="/bi.svg#envelope" class="text-primary">
+                    </svg>
+                    E-mail:<a href="danielsplira@gmail.com" class="text-decoration-none text-secondary">danielsplira@gmail.com</a><br>
+                    <svg width="15" height="15" fill="currentColor" class="bi text-danger">
+                        <use xlink:href="/bi.svg#telephone">
+                    </svg>
+                    Telefone:<a href="contato" class="text-decoration-none text-secondary">(19) 9 94078406</a><br>
+                    <svg width="15" height="15" fill="currentColor" class="bi text-success">
+                        <use xlink:href="/bi.svg#whatsapp">
+                    </svg>
+                    Whatsapp:<a href="contato" class="text-decoration-none text-secondary">(19) 9 94078406</a><br>
 
 
-                  </div>
+                </div>
 
-             </div>
+            </div>
 
         </div>
 
-   </footer>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-   
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

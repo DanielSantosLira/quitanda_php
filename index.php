@@ -45,7 +45,7 @@
                          </li>
 
                          <li class="nav-item">
-                              <a href="#" class="nav-link text-white">Contatos</a>
+                              <a href="contato.php" class="nav-link text-white">Contatos</a>
                          </li>
                     </ul>
 

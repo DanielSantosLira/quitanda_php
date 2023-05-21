@@ -29,7 +29,7 @@
                     <ul class="navbar-nav flex-grow-1">
 
                          <li class="nav-item">
-                              <a href="index-php" class="nav-link text-white">Principal</a>
+                              <a href="index.php" class="nav-link text-white">Principal</a>
                          </li>
 
                          <li class="nav-item">
@@ -52,11 +52,10 @@
 
                               <li class="nav-item">
                                    <a href="#" class="nav-link text-white">
-                                        <svg class="bi" width="24" height="24" fill="currentColor">
-                                             <use xlink:href="/bi.svg#cart3" />
-
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-dash text-whitgh" viewBox="0 0 16 16">
+                                             <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z" />
+                                             <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
                                         </svg>
-                                   </a>
                               </li>
                          </ul>
                     </div>
@@ -153,7 +152,7 @@
                     </div>
                     <div class="mb-3">
                          <a href="index.html" class="btn btn-light btn-outline-danger">Cancelar</a>
-                         <input type="button" value="Criar meu cadastro" class="btn btn-danger" onclick="window.location.href='/ConfirmarCadastro.html'">
+                         <input type="button" value="Criar meu cadastro" class="btn btn-danger" onclick="window.location.href='confirmar-cadstro.php'">
                     </div>
                </form>
           </div>
@@ -210,7 +209,7 @@
 
      </footer>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-     
+
 </body>
 
 </html>
