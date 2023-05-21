@@ -176,7 +176,7 @@
 
           <div class="container">
 
-               <div class="row py-3">
+               <div class="row py-2">
 
                     <div class="col-12 col-md-4 text-center text-md-left text-secondary">
                          &copy;2023 - Quintanda Online Ltda Me<br>
