@@ -67,10 +67,12 @@
 
      <main>
           <div class="container">
-          <h1>Informe seus dados, por favor.</h1>
+               <h1>Informe seus dados, por favor.</h1>
                <hr class="mt-3">
+
                <form action="">
                     <div class="row">
+
                          <div class="col-12 col-md-6">
                               <fieldset class="row">
                                    <legend>Dados Pessoais</legend>
