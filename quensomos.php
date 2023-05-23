@@ -25,10 +25,10 @@
             <div class="navbar-collapse collapse">
                 <ul class="navbar-nav flex-grow-1">
                     <li class="nav-item">
-                        <a href="/index.html" class="nav-link text-white">Principal</a>
+                        <a href="index.php" class="nav-link text-white">Principal</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/contato.html" class="nav-link text-white">Contato</a>
+                        <a href="contato.php" class="nav-link text-white">Contato</a>
                     </li>
                 </ul>
                 <div class="align-self-end">
@@ -37,7 +37,7 @@
                             <a href="/cadastro.html" class="nav-link text-white">Quero Me Cadastrar</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/login.html" class="nav-link text-white">Entrar</a>
+                            <a href="login.php" class="nav-link text-white">Entrar</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link text-white">

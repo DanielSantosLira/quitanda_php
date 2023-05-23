@@ -30,16 +30,16 @@
                         <a href="index.php" class="nav-link text-white">Principal</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/contato.html" class="nav-link text-white">Contato</a>
+                        <a href="contato.php" class="nav-link text-white">Contato</a>
                     </li>
                 </ul>
                 <div class="align-self-end">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="/cadastro.html" class="nav-link text-white">Quero Me Cadastrar</a>
+                            <a href="cadastro.php" class="nav-link text-white">Quero Me Cadastrar</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/login.html" class="nav-link text-white">Entrar</a>
+                            <a href="login.php" class="nav-link text-white">Entrar</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link text-white">

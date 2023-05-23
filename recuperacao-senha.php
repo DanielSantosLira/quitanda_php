@@ -33,7 +33,7 @@
                          </li>
 
                          <li class="nav-item">
-                              <a href="#" class="nav-link text-white">Contatos</a>
+                              <a href="contato.php" class="nav-link text-white">Contatos</a>
                          </li>
                     </ul>
 
@@ -43,11 +43,11 @@
                          <ul class="navbar-nav">
 
                               <li class="nav-item">
-                                   <a href="#" class="nav-link text-white">Quero Me Cadastrar</a>
+                                   <a href="cadastro.php" class="nav-link text-white">Quero Me Cadastrar</a>
                               </li>
 
                               <li class="nav-item">
-                                   <a href="#" class="nav-link text-white">Entrar</a>
+                                   <a href="login.php" class="nav-link text-white">Entrar</a>
                               </li>
 
                               <li class="nav-item">

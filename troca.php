@@ -28,10 +28,10 @@
                <div class="navbar-collapse collapse">
                     <ul class="navbar-nav flex-grow-1">
                          <li class="nav-item">
-                              <a href="/index.html" class="nav-link text-white">Principal</a>
+                              <a href="index.php" class="nav-link text-white">Principal</a>
                          </li>
                          <li class="nav-item">
-                              <a href="/contato.html" class="nav-link text-white">Contato</a>
+                              <a href="contato.php" class="nav-link text-white">Contato</a>
                          </li>
                     </ul>
                     <div class="align-self-end">
@@ -40,7 +40,7 @@
                                    <a href="/cadastro.html" class="nav-link text-white">Quero Me Cadastrar</a>
                               </li>
                               <li class="nav-item">
-                                   <a href="/login.html" class="nav-link text-white">Entrar</a>
+                                   <a href="login.php" class="nav-link text-white">Entrar</a>
                               </li>
                               <li class="nav-item">
                                    <a href="#" class="nav-link text-white">
@@ -135,11 +135,11 @@
 
                     <div class="col-12 col-md text-center">
 
-                         <a href="privacidade.html" class="text-decoration-none text-secondary">Política de
+                         <a href="privacidade.php" class="text-decoration-none text-secondary">Política de
                               Privacidade</a><br>
-                         <a href="termos.html" class="text-decoration-none text-secondary">Termos de Usu</a><br>
-                         <a href="quemsomos.html" class="text-decoration-none text-secondary">Quem Somos</a><br>
-                         <a href="troca.html" class="text-decoration-none text-secondary">Troca e Devoluçôes</a>
+                         <a href="termos.php" class="text-decoration-none text-secondary">Termos de Usu</a><br>
+                         <a href="quemsomos.php" class="text-decoration-none text-secondary">Quem Somos</a><br>
+                         <a href="troca.php" class="text-decoration-none text-secondary">Troca e Devoluçôes</a>
                     </div>
 
                     <div class="col-12 col-md-4 text-center text-md-right">

@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="pt-br">
 
@@ -14,6 +15,7 @@
 </head>
 
 <body style="min-width:372px;">
+
      <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom shadow-sm mb-3">
 
           <div class="container">
@@ -31,11 +33,11 @@
                     <ul class="navbar-nav flex-grow-1">
 
                          <li class="nav-item">
-                              <a href="#" class="nav-link text-white">Principal</a>
+                              <a href="index.php" class="nav-link text-white">Principal</a>
                          </li>
 
                          <li class="nav-item">
-                              <a href="#" class="nav-link text-white">Contatos</a>
+                              <a href="contato.php" class="nav-link text-white">Contatos</a>
                          </li>
                     </ul>
 
@@ -45,11 +47,11 @@
                          <ul class="navbar-nav">
 
                               <li class="nav-item">
-                                   <a href="#" class="nav-link text-white">Quero Me Cadastrar</a>
+                                   <a href="cadastro.php" class="nav-link text-white">Quero Me Cadastrar</a>
                               </li>
 
                               <li class="nav-item">
-                                   <a href="#" class="nav-link text-white">Entrar</a>
+                                   <a href="login.php" class="nav-link text-white">Entrar</a>
                               </li>
 
                               <li class="nav-item">
@@ -186,11 +188,11 @@
 
                     <div class="col-12 col-md text-center">
 
-                         <a href="privacidade.html" class="text-decoration-none text-secondary">Política de
+                         <a href="privacidade.php" class="text-decoration-none text-secondary">Política de
                               Privacidade</a><br>
-                         <a href="termos.html" class="text-decoration-none text-secondary">Termos de Usu</a><br>
-                         <a href="quensomos.html" class="text-decoration-none text-secondary">Quem Somos</a><br>
-                         <a href="troca.html" class="text-decoration-none text-secondary">Troca e Devoluçôes</a>
+                         <a href="termos.php" class="text-decoration-none text-secondary">Termos de Usu</a><br>
+                         <a href="quensomos.php" class="text-decoration-none text-secondary">Quem Somos</a><br>
+                         <a href="troca.php" class="text-decoration-none text-secondary">Troca e Devoluçôes</a>
                     </div>
 
                     <div class="col-12 col-md-4 text-center text-md-right">
@@ -218,7 +220,7 @@
 
      </footer>
 
-     <script src="\node_modules\bootstrap\dist\js\bootstrap.bundle.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 
 </html>
