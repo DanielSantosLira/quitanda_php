@@ -67,7 +67,7 @@
 
      <main>
           <div class="container">
-               <h1>Informe seus dados, por favor.</h1>
+          <h1>Informe seus dados, por favor.</h1>
                <hr class="mt-3">
 
                <form action="">
@@ -154,7 +154,7 @@
                     </div>
                     <div class="mb-3">
                          <a href="index.html" class="btn btn-light btn-outline-danger">Cancelar</a>
-                         <input type="button" value="Criar meu cadastro" class="btn btn-danger" onclick="window.location.href='confirmar-cadstro.php'">
+                         <input type="button" value="Criar meu cadastro" class="btn btn-danger">
                     </div>
                </form>
           </div>
@@ -202,7 +202,7 @@
                          </svg>
                          Whatsapp:<a href="contato" class="text-decoration-none text-secondary">(19) 9 94078406</a><br>
 
-
+                       
                     </div>
 
                </div>
@@ -210,8 +210,8 @@
           </div>
 
      </footer>
+   
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-
 </body>
 
 </html>
