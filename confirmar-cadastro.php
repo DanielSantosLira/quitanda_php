@@ -83,6 +83,12 @@
 
                </p>
                <p class="mt-3">
+               <?php
+                        $mesagem = $_GET["msg"] ?? "";
+                        if ($mesagem == "sucesso") {
+                            echo "<em class='alert alert-primary'>Usuário e senha cadastrado com sucesso</em>";
+                        }
+                        ?>
                     <a href="index.php" class="btn btn-danger">Voltar á página Principal</a>
                </p>
           </div>
