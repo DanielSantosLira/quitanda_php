@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 23-Maio-2023 às 21:17
+-- Tempo de geração: 25-Maio-2023 às 18:35
 -- Versão do servidor: 10.4.27-MariaDB
 -- versão do PHP: 8.2.0
 
@@ -24,22 +24,61 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `carrinho`
+--
+
+CREATE TABLE `carrinho` (
+  `id` int(100) NOT NULL,
+  `foto` varchar(100) NOT NULL,
+  `categoria` varchar(100) NOT NULL,
+  `categoria 2` varchar(100) NOT NULL,
+  `titulo` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `produtos`
+--
+
+CREATE TABLE `produtos` (
+  `id` int(11) NOT NULL,
+  `foto` varchar(100) NOT NULL,
+  `foto1` varchar(100) NOT NULL,
+  `foto3` varchar(100) NOT NULL,
+  `titulo` varchar(100) NOT NULL,
+  `categoria` varchar(100) NOT NULL,
+  `video` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Extraindo dados da tabela `produtos`
+--
+
+INSERT INTO `produtos` (`id`, `foto`, `foto1`, `foto3`, `titulo`, `categoria`, `video`) VALUES
+(1, 'http://localhost/quitanda_php/img/000001.jpg', 'http://www.w3.org/2000/svg', '\"http://www.w3.org/2000/svg', 'Banana Prata', ' Banana prata da melhor qualidade possível,\r\n                                             direto do ', 'http://localhost/quitanda_php/carrinho.php'),
+(2, 'http://localhost/quitanda_php/img/000002.jpg', 'http://www.w3.org/2000/svg', 'http://www.w3.org/2000/svg', 'Abacaxi', 'Abacaxi da melhor qualidade, disponível\r\n                                             direto do prod', 'http://localhost/quitanda_php/carrinho.php');
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `usuario`
 --
 
 CREATE TABLE `usuario` (
-  `Nome` varchar(100) NOT NULL,
-  `CPF` int(50) NOT NULL,
-  `Data_nacimento` int(50) NOT NULL,
-  `E-mail` varchar(50) NOT NULL,
-  `Telefone` int(50) NOT NULL,
-  `CEP` int(50) NOT NULL,
-  `Rua` varchar(50) NOT NULL,
-  `Numero` int(50) NOT NULL,
-  `Complemento` varchar(50) NOT NULL,
-  `Referencia` varchar(50) NOT NULL,
-  `Senha` int(50) NOT NULL,
-  `Conf_senha` int(50) NOT NULL
+  `id` int(100) NOT NULL,
+  `nome` varchar(100) NOT NULL,
+  `cpf` varchar(50) NOT NULL,
+  `datanacimento` varchar(50) DEFAULT NULL,
+  `email` varchar(50) NOT NULL,
+  `telefone` varchar(50) NOT NULL,
+  `cep` varchar(50) NOT NULL,
+  `rua` varchar(50) NOT NULL,
+  `numero` varchar(50) NOT NULL,
+  `complemento` varchar(50) NOT NULL,
+  `referencia` varchar(50) NOT NULL,
+  `senha` varchar(50) NOT NULL,
+  `conf_senha` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -47,10 +86,22 @@ CREATE TABLE `usuario` (
 --
 
 --
+-- Índices para tabela `carrinho`
+--
+ALTER TABLE `carrinho`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Índices para tabela `produtos`
+--
+ALTER TABLE `produtos`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Índices para tabela `usuario`
 --
 ALTER TABLE `usuario`
-  ADD PRIMARY KEY (`Nome`);
+  ADD PRIMARY KEY (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

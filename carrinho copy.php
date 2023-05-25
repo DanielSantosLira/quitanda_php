@@ -71,6 +71,7 @@
                <hr>
 
                <?php
+               
                include "conexao.php";
 
                $sql_buscar = "select * from carrinho";

@@ -73,7 +73,7 @@
           <div class="container">
                <h1>Informe seus dados, por favor.</h1>
                <hr class="mt-3">
-               <form action="salvar-usuario.php?id=<?php echo $id; ?>" method="post">
+               <form action="salvar_usuario.php?id=<?php echo $id; ?>" method="post">
                     <div class="row">
                          <div class="col-12 col-md-6">
                               <fieldset class="row">
@@ -146,7 +146,7 @@
                                    </div>
                                    <div class="mb-3 col-md-4">
                                         <label for="numero" class="form-label">Número</label>
-                                        <input type="text" class="form-control" id="numero">
+                                        <input type="number" class="form-control" id="numero">
                                    </div>
                                    <div class="mb-3 col-md-8">
                                         <label for="complemento" class="form-label">Complemento</label>
@@ -157,6 +157,7 @@
                                         <input type="text" class="form-control" id="referencia" >
                                    </div>
                               </fieldset>
+                              
                               <fieldset>
                                    <legend>Senha de Acesso</legend>
                                    <div class="mb-3">
