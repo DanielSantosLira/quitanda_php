@@ -1,5 +1,5 @@
 <?php
-include "conexao.php";
+
 
 
 $nome = $_POST["nome"];
@@ -15,6 +15,7 @@ $referencia = $_POST ["referencia"];
 $senha = $_POST["senha"];
 $conf_senha = $_POST["conf_senha"];
 
+include "conexao.php";
 $sql_inserir_usuario = "insert into  usuario(nome, cpf, data_nacimento, email, telefone,
 cep,rua , numero , complemento, referencia, senha, conf_senha) values('$nome','$cpf', '$data_nacimento',  '$email', '$telefone', '$cep', '$rua', '$numero','$complemento','$referencia','" . md5($senha) . " ," . md5($conf_senha) . "')";
 
