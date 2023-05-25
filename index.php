@@ -241,7 +241,7 @@
 
                                    <div class="card-footer">
 
-                                        <a href="" class="btn btn-danger">
+                                        <a href="<?php echo $um_produtos["video"]; ?>" class="btn btn-danger">
                                              Adicionar ao Carrinho
                                         </a>
 
@@ -278,7 +278,7 @@
 
 
                                    </div>
-<!-- 
+ 
                                    <div class="card-body">
                                         <h5 class="card-title">Abacaxi</h5>
                                         <p class="card-text truncate">

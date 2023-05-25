@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 25-Maio-2023 às 18:35
+-- Tempo de geração: 25-Maio-2023 às 21:45
 -- Versão do servidor: 10.4.27-MariaDB
 -- versão do PHP: 8.2.0
 
@@ -35,6 +35,13 @@ CREATE TABLE `carrinho` (
   `titulo` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Extraindo dados da tabela `carrinho`
+--
+
+INSERT INTO `carrinho` (`id`, `foto`, `categoria`, `categoria 2`, `titulo`) VALUES
+(1, 'http://localhost/quitanda_php/img/000001.jpg', 'Banana', 'Banana da melhor qualidade possível e muito fresco.', 'Banana');
+
 -- --------------------------------------------------------
 
 --
@@ -48,16 +55,17 @@ CREATE TABLE `produtos` (
   `foto3` varchar(100) NOT NULL,
   `titulo` varchar(100) NOT NULL,
   `categoria` varchar(100) NOT NULL,
-  `video` varchar(100) NOT NULL
+  `video` varchar(100) NOT NULL,
+  `valor` varchar(100) NOT NULL,
+  `estoque` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Extraindo dados da tabela `produtos`
 --
 
-INSERT INTO `produtos` (`id`, `foto`, `foto1`, `foto3`, `titulo`, `categoria`, `video`) VALUES
-(1, 'http://localhost/quitanda_php/img/000001.jpg', 'http://www.w3.org/2000/svg', '\"http://www.w3.org/2000/svg', 'Banana Prata', ' Banana prata da melhor qualidade possível,\r\n                                             direto do ', 'http://localhost/quitanda_php/carrinho.php'),
-(2, 'http://localhost/quitanda_php/img/000002.jpg', 'http://www.w3.org/2000/svg', 'http://www.w3.org/2000/svg', 'Abacaxi', 'Abacaxi da melhor qualidade, disponível\r\n                                             direto do prod', 'http://localhost/quitanda_php/carrinho.php');
+INSERT INTO `produtos` (`id`, `foto`, `foto1`, `foto3`, `titulo`, `categoria`, `video`, `valor`, `estoque`) VALUES
+(2, 'http://localhost/quitanda_php/img/000002.jpg', 'http://www.w3.org/2000/svg', 'http://www.w3.org/2000/svg', 'Abacaxi', 'Abacaxi  da melhor qualidade possível,\r\n                                             direto do ', 'http://localhost/quitanda_php/carrinho.php', 'R$ 4,50', '420,5kg em estoque');
 
 -- --------------------------------------------------------
 
