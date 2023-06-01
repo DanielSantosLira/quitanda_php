@@ -1,7 +1,7 @@
 <?php
 include "conexao.php";
 
-
+$id = $_GET["id"];
 $nome = $_POST["nome"];
 $cpf = $_POST["cpf"];
 $datanacimento = $_POST["datanacimento"];

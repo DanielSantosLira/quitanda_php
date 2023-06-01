@@ -179,6 +179,8 @@
                     <div class="mb-3">
                          <a href="index.html" class="btn btn-light btn-outline-danger">Cancelar</a>
                          <input type="button" value="Criar meu cadastro" class="btn btn-danger" onclick="window.location.href='confirmar-cadastro.php'">
+
+                         <?php
                     </div>
                </form>
           </div>
