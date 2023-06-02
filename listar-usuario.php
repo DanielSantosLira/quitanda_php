@@ -3,15 +3,18 @@
 
 <head>
 
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="shortcut icon" href="img/banana-favicon.png" type="image/x-icon">
-    <title>Quitanda Online :: Contato</title>
+    <title>Quitanda Online :: Listar-Produtos</title>
+
 
 </head>
 
-<body style="min-width: 372px;">
+<body style="min-width:372px;">
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom shadow-sm mb-3">
 
         <div class="container">
@@ -33,7 +36,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-white">Contatos</a>
+                        <a href="contato.php" class="nav-link text-white">Contatos</a>
                     </li>
                 </ul>
 
@@ -43,11 +46,11 @@
                     <ul class="navbar-nav">
 
                         <li class="nav-item">
-                            <a href="usuario.php" class="nav-link text-white">Quero Me Cadastrar</a>
+                            <a href="cadastro.php" class="nav-link text-white">Quero Me Cadastrar</a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-white">Entrar</a>
+                            <a href="login.php" class="nav-link text-white">Entrar</a>
                         </li>
 
                         <li class="nav-item">
@@ -56,7 +59,6 @@
                                     <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z" />
                                     <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
                                 </svg>
-                            </a>
                         </li>
                     </ul>
                 </div>
@@ -64,40 +66,110 @@
         </div>
     </nav>
     <main>
-          <div class="container">
-               <h1>Confirmaçao de Cadastro</h1>
-               <hr>
-               <p class="mt-3">
-                    caro <?php echo $um_usuario["nome"]; ?>
-               </p>
-               <p class="mt-3">
-                    Obrigado por se cadastrar em nossa loja virtual. Um e-mail de confirmação foi enviado
-                    para <b>email@dominio.com.br</b>.Clique no link de canfirmação presente no
-                    e-mail para concluirmos seu cadastro
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Lista de Usuário</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col ">
+                    <table class="table table-hover-warning tabla-striped">
+                        <thead class="">
+                            <tr class="table-primary">
+                                <td>id</td>
+                                <td>Nome</td>
+                                <td>CPF</td>
+                                <td>Data/Nacimento</td>
+                                <td>Email</td>
+                                <td>Telefone</td>
+                                <td>CEP</td>
+                                <td>Rua</td>
+                                <td>Numero</td>
+                                <td>Complemento</td>
+                                <td>Referencia</td>
+                                <td>Senha</td>
+                                <td>Confi/Senha</td>
+                                <td>Ver</td>
+                                <td>Editar</td>
+                                <td>Deletar</td>
 
-               </p>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            include "conexao.php";
+                            $sql_buscar = "select * from usuario";
 
-               <p class="mt-3">
-                    Desede já agradecemos pela confiança em nosso serviço.
-                    central de Relacionamento Quitanda Onlíne
+                            $todos_os_usuario = mysqli_query($conexao, $sql_buscar);
 
-               </p>
-               <p class="mt-3">
-               <?php
-                        $mesagem = $_GET["msg"] ?? "";
-                        if ($mesagem == "sucesso") {
-                            echo "<em class='alert alert-primary'>Usuário e senha cadastrado com sucesso</em>";
-                        }
-                        ?>
-                    <a href="index.php" class="btn btn-danger">Voltar á página Principal</a>
-               </p>
-          </div>
+                            while ($um_usuario = mysqli_fetch_assoc($todos_os_usuario)) :
+                            ?>
+                                <tr>
+                                    <td><?php echo $um_usuario["id"]; ?></td>
+                                    <td><?php echo $um_usuario["nome"]; ?></td>
+                                    <td><?php echo $um_usuario["cpf"]; ?></td>
+                                    <td><?php echo $um_usuario["datanacimento"]; ?></td>
+                                    <td><?php echo $um_usuario["email"]; ?></td>
+                                    <td><?php echo $um_usuario["telefone"]; ?></td>
+                                    <td><?php echo $um_usuario["cep"]; ?></td>
+                                    <td><?php echo $um_usuario["rua"]; ?></td>
+                                    <td><?php echo $um_usuario["numero"]; ?></td>
+                                    <td><?php echo $um_usuario["complemento"]; ?></td>
+                                    <td><?php echo $um_usuario["referencia"]; ?></td>
+                                    <td><?php echo $um_usuario["senha"]; ?></td>
+                                    <td><?php echo $um_usuario["confsenha"]; ?></td>
+                                   
+                                   
+                                    
 
-     </main>
+                                    <td>
+                                    <a href="ver-usuario.php?id=<?php echo $um_usuario["id"]; ?>" class=" btn text-danger">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                            </svg>
+
+                                        </a>
+
+                                    </td>
+                                    <td>
+                                        <a href="editar-usuario.php?id=<?php echo $um_usuario["id"]; ?>" class="btn  text-danger">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                                                <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z" />
+                                            </svg>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="excluir-usuario.php?id=<?php echo $um_usuario["id"]; ?>" class=" btn bg-danger text-white">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash text-denger" viewBox="0 0 16 16">
+                                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z" />
+                                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z" />
+                                            </svg>
+
+                                        </a>
+                                    </td>
+                                </tr>
+
+                        </tbody>
+                    <?php
+                            endwhile;
+                            mysqli_close($conexao);
+                    ?>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
 
     <div style="height: 273px;" class="d-block d-md-none"></div>
     <div style="height: 153px;" class="d-none d-md-block d-lg-none"></div>
     <div style="height: 129px;" class="d-none d-lg-block"></div>
+
 
     <footer class="border-top fixed-bottom text-muted bg-light">
 
@@ -144,7 +216,10 @@
 
     </footer>
 
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

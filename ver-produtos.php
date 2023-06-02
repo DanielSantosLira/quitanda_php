@@ -7,14 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="shortcut icon" href="img/banana-favicon.png" type="image/x-icon">
-    <title>Quitanda Online :: Contato</title>
+
+
+    <title>Quitanda Online :: Ver-Produtos</title>
 
 </head>
 
-<body style="min-width: 372px;">
+
+<body style="min-width:372px;">
     <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom shadow-sm mb-3">
 
         <div class="container">
+
 
             <a href="#" class="navbar-brand"><strong>Quintanda Online</strong></a>
 
@@ -29,11 +33,11 @@
                 <ul class="navbar-nav flex-grow-1">
 
                     <li class="nav-item">
-                        <a href="index.php" class="nav-link text-white">Principal</a>
+                        <a href="#" class="nav-link text-white">Principal</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-white">Contatos</a>
+                        <a href="contato.php" class="nav-link text-white">Contatos</a>
                     </li>
                 </ul>
 
@@ -43,15 +47,15 @@
                     <ul class="navbar-nav">
 
                         <li class="nav-item">
-                            <a href="usuario.php" class="nav-link text-white">Quero Me Cadastrar</a>
+                            <a href="cadastro.php" class="nav-link text-white">Quero Me Cadastrar</a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-white">Entrar</a>
+                            <a href="login.php" class="nav-link text-white">Entrar</a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-white">
+                            <a href="carrinho.php" class="nav-link text-white">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-dash text-whitgh" viewBox="0 0 16 16">
                                     <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z" />
                                     <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
@@ -63,41 +67,49 @@
             </div>
         </div>
     </nav>
-    <main>
-          <div class="container">
-               <h1>Confirmaçao de Cadastro</h1>
-               <hr>
-               <p class="mt-3">
-                    caro <?php echo $um_usuario["nome"]; ?>
-               </p>
-               <p class="mt-3">
-                    Obrigado por se cadastrar em nossa loja virtual. Um e-mail de confirmação foi enviado
-                    para <b>email@dominio.com.br</b>.Clique no link de canfirmação presente no
-                    e-mail para concluirmos seu cadastro
+    <?php
 
-               </p>
 
-               <p class="mt-3">
-                    Desede já agradecemos pela confiança em nosso serviço.
-                    central de Relacionamento Quitanda Onlíne
+    $id = $_GET['id'];
+    $titulo = $categoria = $foto = $video = $estoque = $valor = "";
+    include "conexao.php";
+    $sql_buscar = "select * from produtos  where id = $id";
+    $todos_os_produtos = mysqli_query($conexao, $sql_buscar);
 
-               </p>
-               <p class="mt-3">
-               <?php
-                        $mesagem = $_GET["msg"] ?? "";
-                        if ($mesagem == "sucesso") {
-                            echo "<em class='alert alert-primary'>Usuário e senha cadastrado com sucesso</em>";
-                        }
-                        ?>
-                    <a href="index.php" class="btn btn-danger">Voltar á página Principal</a>
-               </p>
-          </div>
+    while ($um_produtos = mysqli_fetch_assoc($todos_os_produtos)) :
+        $titulo = $um_produtos["titulo"];
+        $categoria = $um_produtos["categoria"];
+        $video = $um_produtos["video"];
+        $foto = $um_produtos["foto"];
+        $estoque = $um_produtos["estoque"];
+        $valor = $um_produtos["valor"];
+    endwhile;
+    mysqli_close($conexao);
+    ?>
+    <a href="listar-produtos.php" class="btn btn-danger text-white">Voltar</a>
+    <div class="container mt-3">
+        <div class="col-12">
+            <h1 class="text-secondary">
+                Detalhe do Produto Cód.: <?php echo $id; ?>
+            </h1>
+        </div>
+        <div class="col-12 text-dark">
+            <h3 class="text-secondary">Titulo: <?php echo $titulo; ?> </h3>
+            <p><img src="<?php echo $foto; ?>" alt="" width="300"></p>
+            <p class="text-primary">Categoria: <small class="text-secondary"><?php echo $categoria; ?></small> </p>
+            <p class="text-danger">Estoque:<small class="text-secondary"> <?php echo $estoque; ?></small> </p>
+            </p>
+            <p class="text-muted">Valor:<small class="text-danger"> <?php echo $valor; ?></small> </p>
+            <a href="<?php echo $video; ?>" class="btn bg-danger text-white">Ver Vídeo do Produto</a>
+            <a href="listar-produtos.php" class="btn btn-danger text-white">Voltar</a>
+        </div>
 
-     </main>
+    </div>
 
     <div style="height: 273px;" class="d-block d-md-none"></div>
     <div style="height: 153px;" class="d-none d-md-block d-lg-none"></div>
     <div style="height: 129px;" class="d-none d-lg-block"></div>
+
 
     <footer class="border-top fixed-bottom text-muted bg-light">
 
@@ -134,16 +146,15 @@
                         <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
                     </svg>
                     Whatsapp:<a href="contato" class="text-decoration-none text-secondary">(19) 9 94078406</a><br>
-
+                   
 
                 </div>
-
+                
             </div>
 
         </div>
 
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 
