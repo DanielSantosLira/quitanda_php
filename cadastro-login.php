@@ -3,43 +3,18 @@
 
 <head>
 
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="shortcut icon" href="img/banana-favicon.png" type="image/x-icon">
-    <title>Quitanda Online :: Editar Usuário</title>
-
-
+    <title>Quitanda Online :: Cadastro</title>
 
 
 </head>
 
-<?php
-$id = $_GET['id'];
-$nome = $cpf  = $datadenacimento = $email = $telefone = $cep = $rua = $numero = $complemento = $referencia = $senha = $conf_senha = "";
-include "conexao.php";
-$sql_buscar = "select * from usuario  where id = $id";
-$todos_os_usuario = mysqli_query($conexao, $sql_buscar);
-while ($um_usuario = mysqli_fetch_assoc($todos_os_usuario)) :
-    $nome = $um_usuario["nome"];
-    $cpf = $um_usuario["cpf"];
-    $datanacimento = $um_usuario["datanacimento"];
-    $email = $um_usuario["email"];
-    $telefone = $um_usuario["telefone"];
-    $cep = $um_usuario["cep"];
-    $rua = $um_usuario["rua"];
-    $numero = $um_usuario["numero"];
-    $complemento = $um_usuario["complemento"];
-    $referencia = $um_usuario["referencia"];
-    $senha = $um_usuario["senha"];
-    $confsenha = $um_usuario["confsenha"];
-
-endwhile;
-mysqli_close($conexao);
-?>
-
 <body style="min-width:372px;">
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom shadow-sm mb-3">
 
         <div class="container">
@@ -79,82 +54,62 @@ mysqli_close($conexao);
                         </li>
 
                         <li class="nav-item">
-                            <a href="carrinho.php" class="nav-link text-white">
+                            <a href="#" class="nav-link text-white">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-dash text-whitgh" viewBox="0 0 16 16">
                                     <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z" />
                                     <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
                                 </svg>
-                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </nav>
+
+
+
     <main>
-        <div class="container mt-3">
-            <div class="col-12">
-                <h6>
-                    Editar do usuario Cód.: <?php echo $id; ?>
-                </h6>
-            </div>
-            <div class="col-12">
-                <form action="salvar-usuario-editado.php?id=<?php echo $id; ?>" method="post">
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <legend>Editar Usuário</legend>
-
-                            <div class="form-group mt-3">
-                                <label for="nome">Nome</label>
-                                <input name="nome" value="<?php echo $nome; ?>" class="form-control">
-                            </div>
-                            <div class="form-group mt-3">
-                                <label for="cpf" class="form-label">CPF</label>
-                                <input name="email" value="<?php echo $cpf; ?>" class="form-control">
-                            </div>
-                            <div class="form-group mt-3">
-                                <label for="datanacimento"> Data de Nacimento</label>
-                                <input name="datanacimento" value="<?php echo $datanacimento; ?>" class="form-control">
-                            </div>
-                            <div class="form-group mt-3">
-                                <label for="email" class="form-label"> E-mail</label>
-                                <input name="email" value="<?php echo $email; ?>" class="form-control">
-                            </div>
-                            <div class="form-group mt-3">
-                                <label for="telefone" class="form-label">Telefone</label>
-                                <input name="email" value="<?php echo $telefone; ?>" class="form-control">
-                            </div>
-                            <div class="form-group mt-3">
-                                <label for="cep" class="form-label"> CEP </label>
-                                <input name="email" value="<?php echo $cep; ?>" class="form-control">
-                            </div>
-                            <div class="form-group mt-3">
-                                <label for="rua" class="form-label"> Rua</label>
-                                <input name="email" value="<?php echo $rua; ?>" class="form-control">
-                            </div>
-                            <div class="form-group mt-3">
-                                <label for="numero" class="form-label"> Número </label>
-                                <input name="email" value="<?php echo $numero; ?>" class="form-control">
-                            </div>
-                            <div class="form-group mt-3">
-                                <label for="senha">Senha</label> <input type="password" name="senha" value="<?php echo $senha; ?>" class="form-control">
-                            </div>
-                            <div class="form-group mt-3">
-                                <label for="confsenha">Confirme-Senha</label> <input type="password" name="confsenha" value="<?php echo $confsenha; ?>" class="form-control">
-                            </div>
-
-                            <div class="form-group mt-3">
-                                <input type="button" value="Editar meu usuário" class="btn btn-danger">
-
-                            </div>
-
-                        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <form action="login.php" class="col-sm-10 col-md-8 col-lg-6">
+                    <h1 class="mb-3">Indentifique-se, por favor</h1>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" autofocus id="email">
+                        <label for="email">E-mail</label>
                     </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" autofocus id="senha">
+                        <label for="senha">Senha</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" autofocus id="confSenha">
+                        <label for="confSenha">Confirme a Senha</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input type="checkbox" class="form-check-input" value="" id="lembrar">
+                        <label for="lembrar" class="form-check-label">Lembrar de mim</label>
+                    </div>
+
+                    <button class="btn btn-lg btn-danger" type="button">Entar</button>
+
+                    <p class="mt-3">
+                        Ainda não é casdastrado? <a href="usuario.php">Clique aqui</a> para se
+                        cadastar
+                    </p>
+
+                    <p class="mt-3">
+                        Esqueseu sua snha?<a href="recuperar-senha.php">Clique aqui</a> para
+                        recuperé-la.
+
+                    </p>
+
                 </form>
             </div>
-
         </div>
     </main>
+
+
+
 
     <div style="height: 273px;" class="d-block d-md-none"></div>
     <div style="height: 153px;" class="d-none d-md-block d-lg-none"></div>
@@ -205,8 +160,8 @@ mysqli_close($conexao);
         </div>
 
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 
 </html>

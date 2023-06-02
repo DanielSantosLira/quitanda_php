@@ -26,6 +26,6 @@ $um_usuario = mysqli_query($conexao, $sql_inserir_usuario);
 mysqli_close($conexao);
 
 
-header("location:confirmar_cadastro.php?msg=sucesso");
+header("location:confirmar-cadastro.php?msg=sucesso");
 
 ?>

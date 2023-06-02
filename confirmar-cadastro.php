@@ -68,7 +68,7 @@
                <h1>Confirmaçao de Cadastro</h1>
                <hr>
                <p class="mt-3">
-                    caro <strong></strong>
+                    caro <?php echo $um_usuario["nome"]; ?>
                </p>
                <p class="mt-3">
                     Obrigado por se cadastrar em nossa loja virtual. Um e-mail de confirmação foi enviado

@@ -3,17 +3,18 @@
 
 <head>
 
-
-     <meta charset="utf-8">
+    
+<meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
      <link rel="shortcut icon" href="img/banana-favicon.png" type="image/x-icon">
-     <title>Quitanda Online :: confirma Contato</title>
+     <title>Quitanda Online :: Cadastro</title>
 
 
 </head>
 
 <body style="min-width:372px;">
+
      <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom shadow-sm mb-3">
 
           <div class="container">
@@ -45,7 +46,7 @@
                          <ul class="navbar-nav">
 
                               <li class="nav-item">
-                                   <a href="cadastro.php" class="nav-link text-white">Quero Me Cadastrar</a>
+                                   <a href="usuario.php" class="nav-link text-white">Quero Me Cadastrar</a>
                               </li>
 
                               <li class="nav-item">
@@ -88,7 +89,7 @@
                     Central de Relacionamento Quitanda Onlíne.
                </p>
 
-               <a href="index.php" class="btn btn-light btn-outline-danger">Sair</a>
+              
 
           </div>
 

@@ -80,7 +80,7 @@
                                    <legend>Dados Pessoais</legend>
                                    <div class="mb-3">
                                         <label for="nome" class="form-label">Nome</label>
-                                        <input type="text" class="form-control" id="nome"  required required placeholder="Digite seu Nome">
+                                        <input type="text" class="form-control" id="nome"  required  placeholder="Digite seu Nome">
                                    </div>
                                    <div class="mb-3 col-md-6 col-xl-4">
                                         <label for="cpf" class="form-label">CPF</label>
@@ -89,8 +89,8 @@
                                    </div>
                                    <div class="mb-3 col-md-6 col-xl-4">
 
-                                        <label for="data_nacimento" class="form-label">Data de Nascimento</label>
-                                        <input type="date" class="form-control" id="data_nacimento" required>
+                                        <label for="datanacimento" class="form-label">Data de Nascimento</label>
+                                        <input type="date" class="form-control" id="datanacimento" required>
                                    </div>
                               </fieldset>
                               <fieldset>
@@ -146,15 +146,15 @@
                                    </div>
                                    <div class="mb-3 col-md-4">
                                         <label for="numero" class="form-label">Número</label>
-                                        <input type="number" class="form-control" id="numero">
+                                        <input type="number" class="form-control" id="numero" required>
                                    </div>
                                    <div class="mb-3 col-md-8">
                                         <label for="complemento" class="form-label">Complemento</label>
-                                        <input type="text" class="form-control" id="complemento" >
+                                        <input type="text" class="form-control" id="complemento" required >
                                    </div>
                                    <div class="mb-3">
                                         <label for="referencia" class="form-label">Referência</label>
-                                        <input type="text" class="form-control" id="referencia" >
+                                        <input type="text" class="form-control" id="referencia" required>
                                    </div>
                               </fieldset>
                               
@@ -162,11 +162,11 @@
                                    <legend>Senha de Acesso</legend>
                                    <div class="mb-3">
                                         <label for="senha" class="form-label">Senha</label>
-                                        <input type="password" class="form-control" id="senha" >
+                                        <input type="password" class="form-control" id="senha" required >
                                    </div>
                                    <div class="mb-3">
-                                        <label for="conf_senha" class="form-label">Confimação da Senha</label>
-                                        <input type="password" class="form-control" id="conf_senha">
+                                        <label for="confsenha" class="form-label">Confimação da Senha</label>
+                                        <input type="password" class="form-control" id="confsenha">
                                    </div>
                               </fieldset>
                          </div>
@@ -178,18 +178,13 @@
                     </div>
                     <div class="mb-3">
                          <a href="index.html" class="btn btn-light btn-outline-danger">Cancelar</a>
-                         <input type="button" value="Criar meu cadastro" class="btn btn-danger" onclick="window.location.href='confirmar-cadastro.php'">
+                         <input type="button" value="Criar meu cadastro" class="btn btn-danger">
 
-                         <?php
-                         $mensagem = $_GET["msg"] ?? "";
-                         if($mensagem = "sucesso"){
-                              echo "confirmar-cadastro.php";
-                         }
-                         ?>
+                         
                     </div>
                </form>
           </div>
-
+          
      </main>
 
      <div style="height: 273px;" class="d-block d-md-none"></div>

@@ -62,7 +62,7 @@
                               </li>
 
                               <li class="nav-item">
-                                   <a href="login.php" class="nav-link text-white">Entrar</a>
+                                   <a href="cadastro-login.php" class="nav-link text-white">Entrar</a>
                               </li>
 
                               <li class="nav-item">
@@ -192,7 +192,7 @@
                <hr class="mt-3">
 
                <div class="row g-3">
-               <?php
+                    <?php
                     include "conexao.php";
 
                     $sql_buscar = "select * from produtos";
@@ -201,7 +201,7 @@
 
                     while ($um_produtos = mysqli_fetch_assoc($todos_os_produtos)) :
                     ?>
- 
+
                          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
                               <div class="card text-center bg-light">
                                    <a href="#" class="position-absolute right-0  p-2 text-danger">
@@ -232,8 +232,8 @@
                                    <div class="card-body">
                                         <h5 class="card-title"><?php echo $um_produtos["titulo"]; ?></h5>
                                         <p class="card-text truncate">
-                                        <?php echo $um_produtos["categoria"]; ?>
-                                    
+                                             <?php echo $um_produtos["categoria"]; ?>
+
                                         </p>
                                    </div>
 
@@ -249,9 +249,9 @@
                               </div>
 
                          </div>
-                         
-                      
- 
+
+
+
                     <?php
                     endwhile;
                     mysqli_close($conexao);
