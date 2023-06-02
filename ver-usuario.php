@@ -9,7 +9,7 @@ $sql_buscar = "select * from usuario  where id = $id";
 $todos_os_usuario= mysqli_query($conexao, $sql_buscar);
 while ($um_usuario = mysqli_fetch_assoc($todos_os_usuario)) :
     $nome = $um_usuario["nome"];
-    $cpf =$um_usuario["cpf "];
+    $cpf = $um_usuario["cpf "];
     $datadenacimento =$um_usuario["datadenacimento"];
     $email =$um_usuario["email"];
     $telefone =$um_usuario["telefone"];
