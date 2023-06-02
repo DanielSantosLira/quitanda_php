@@ -16,6 +16,7 @@
 </head>
 
 <?php
+
 $id = $_GET['id'];
 $nome = $cpf  = $datadenacimento = $email = $telefone = $cep = $rua = $numero = $complemento = $referencia = $senha = $conf_senha = "";
 include "conexao.php";
