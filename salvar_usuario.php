@@ -17,7 +17,7 @@ $confsenha = $_POST["confsenha"];
 
 
 $sql_inserir_usuario = "insert into  usuario(nome, cpf, datanacimento, email, telefone,
-cep, rua , numero , complemento,  senha, confsenha) values('$nome','$cpf', '$datanacimento',  '$email', '$telefone', '$cep', '$rua', '$numero','$complemento','referencia' ,'" . md5($senha) . " ," . md5($confsenha) . "')";
+cep, rua, numero, complemento, referencia,  senha, confsenha) values('$nome','$cpf','$datanacimento','$email','$telefone','$cep','$rua','$numero','$complemento','$referencia' ,'" . md5($senha) . " ," . md5($confsenha) . "')";
 
 $um_usuario = mysqli_query($conexao, $sql_inserir_usuario);
 

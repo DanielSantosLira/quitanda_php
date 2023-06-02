@@ -181,6 +181,11 @@
                          <input type="button" value="Criar meu cadastro" class="btn btn-danger" onclick="window.location.href='confirmar-cadastro.php'">
 
                          <?php
+                         $mensagem = $_GET["msg"] ?? "";
+                         if($mensagem = "sucesso"){
+                              echo "confirmar-cadastro.php";
+                         }
+                         ?>
                     </div>
                </form>
           </div>
