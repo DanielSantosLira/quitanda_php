@@ -106,21 +106,21 @@
                             ?>
                                 <tr>
                                     <td><?php echo $um_usuario["id"]; ?></td>
-                                    <td><?php echo $um_usuario["Nome"]; ?></td>
-                                    <td><?php echo $um_usuario["CPF"]; ?></td>
-                                    <td><?php echo $um_usuario["Data de nacimento"]; ?></td>
-                                    <td><?php echo $um_usuario["Email"]; ?></td>
-                                    <td><?php echo $um_usuario["Telefone"]; ?></td>
-                                    <td><?php echo $um_usuario["CEP"]; ?></td>
-                                    <td><?php echo $um_usuario["Rua"]; ?></td>
-                                    <td><?php echo $um_usuario["Numero"]; ?></td>
-                                    <td><?php echo $um_usuario["Complemento"]; ?></td>
-                                    <td><?php echo $um_usuario["Referencia"]; ?></td>
-                                    <td><?php echo $um_usuario["Senha"]; ?></td>
-                                    <td><?php echo $um_usuario["Confirmar senha"]; ?></td>
-                                    <td><?php echo $um_usuario["Ver-Usuario"]; ?></td>
-                                    <td><?php echo $um_usuario["Editar"]; ?></td>
-                                    <td><?php echo $um_usuario["Deletar"]; ?></td>
+                                    <td><?php echo $um_usuario["nome"]; ?></td>
+                                    <td><?php echo $um_usuario["cpf"]; ?></td>
+                                    <td><?php echo $um_usuario["data de nacimento"]; ?></td>
+                                    <td><?php echo $um_usuario["email"]; ?></td>
+                                    <td><?php echo $um_usuario["telefone"]; ?></td>
+                                    <td><?php echo $um_usuario["cep"]; ?></td>
+                                    <td><?php echo $um_usuario["rua"]; ?></td>
+                                    <td><?php echo $um_usuario["numero"]; ?></td>
+                                    <td><?php echo $um_usuario["complemento"]; ?></td>
+                                    <td><?php echo $um_usuario["referencia"]; ?></td>
+                                    <td><?php echo $um_usuario["senha"]; ?></td>
+                                    <td><?php echo $um_usuario["confirmar senha"]; ?></td>
+                                    <td><?php echo $um_usuario["ver-usuario"]; ?></td>
+                                    <td><?php echo $um_usuario["editar"]; ?></td>
+                                    <td><?php echo $um_usuario["deletar"]; ?></td>
                                     
                                     <td>
                                         <a href="ver-produtos.php?id=<?php echo $um_produtos["id"]; ?>" class=" btn text-danger">
