@@ -1,7 +1,6 @@
 <?php
 include "conexao.php";
 
-$id = $_GET["id"];
 $nome = $_POST["nome"];
 $cpf = $_POST["cpf"];
 $datanacimento = $_POST["datanacimento"];
@@ -16,8 +15,7 @@ $senha = $_POST["senha"];
 $confsenha = $_POST["confsenha"];
 
 
-$sql_inserir_usuario = "insert into  usuario(nome, cpf, datanacimento, email, telefone,
-cep, rua, numero, complemento, referencia,  senha, confsenha) values('$nome','$cpf','$datanacimento','$email','$telefone','$cep','$rua','$numero','$complemento','$referencia' ,'" . md5($senha) . " ," . md5($confsenha) . "')";
+$sql_inserir_usuario = "insert into  usuario(nome, cpf, datanacimento, email, telefone, cep, rua, numero, complemento, referencia,  senha, confsenha) values('$nome','$cpf','$datanacimento','$email','$telefone','$cep','$rua','$numero','$complemento','$referencia' ,'" . md5($senha) . " " . md5($confsenha) . "')";
 
 $um_usuario = mysqli_query($conexao, $sql_inserir_usuario);
 
@@ -26,6 +24,6 @@ $um_usuario = mysqli_query($conexao, $sql_inserir_usuario);
 mysqli_close($conexao);
 
 
-header("location:confirmar-cadastro.php?msg=sucesso");
+header("location:novo-usuario.php?msg=sucesso");
 
 ?>

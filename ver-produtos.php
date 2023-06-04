@@ -86,7 +86,7 @@
     endwhile;
     mysqli_close($conexao);
     ?>
-    <a href="listar-produtos.php" class="btn btn-danger text-white">Voltar</a>
+    
     <div class="container mt-3">
         <div class="col-12">
             <h1 class="text-secondary">
@@ -100,7 +100,7 @@
             <p class="text-danger">Estoque:<small class="text-secondary"> <?php echo $estoque; ?></small> </p>
             </p>
             <p class="text-muted">Valor:<small class="text-danger"> <?php echo $valor; ?></small> </p>
-            <a href="<?php echo $video; ?>" class="btn bg-danger text-white">Ver Vídeo do Produto</a>
+            <a href="<?php echo $video; ?>" class="btn bg-danger text-white">Adicionar ao Carinnho</a>
             <a href="listar-produtos.php" class="btn btn-danger text-white">Voltar</a>
         </div>
 

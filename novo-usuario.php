@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html lang="pt-br">
 
@@ -73,24 +75,24 @@
           <div class="container">
                <h1>Informe seus dados, por favor.</h1>
                <hr class="mt-3">
-               <form action="salvar_usuario.php?id=<?php echo $id; ?>" method="post">
+               <form action=" salvar-usuario.php" method="post">
                     <div class="row">
                          <div class="col-12 col-md-6">
                               <fieldset class="row">
                                    <legend>Dados Pessoais</legend>
                                    <div class="mb-3">
                                         <label for="nome" class="form-label">Nome</label>
-                                        <input type="text" class="form-control" id="nome"  required  placeholder="Digite seu Nome">
+                                        <input type="text" class="form-control" name="nome"  required  placeholder="Digite seu Nome">
                                    </div>
                                    <div class="mb-3 col-md-6 col-xl-4">
                                         <label for="cpf" class="form-label">CPF</label>
                                         <span class="form-text">(somente número)</span>
-                                        <input type="text" class="form-control" id="cpf" required placeholder="Digite seu CPF">
+                                        <input type="text" class="form-control" name="cpf" required placeholder="Digite seu CPF">
                                    </div>
                                    <div class="mb-3 col-md-6 col-xl-4">
 
                                         <label for="datanacimento" class="form-label">Data de Nascimento</label>
-                                        <input type="date" class="form-control" id="datanacimento" required>
+                                        <input type="date" class="form-control" name="datanacimento" required>
                                    </div>
                               </fieldset>
                               <fieldset>
@@ -104,7 +106,7 @@
                                                        <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z" />
                                                   </svg>
                                              </span>
-                                             <input type="text" class="form-control" required placeholder="Digite seu E-mail">
+                                             <input type="email" name="email" class="form-control" required placeholder="Digite seu E-mail">
 
 
                                         </div>
@@ -118,7 +120,7 @@
                                                        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
                                                   </svg>
                                              </span>
-                                             <input type="tel" class="form-control" id="telefone"  required placeholder="(xx) xxxxx-xxxx">
+                                             <input type="tel" class="form-control" name="telefone"  required placeholder="(xx) xxxxx-xxxx">
 
                                              <span class="form-text">(com DDD, somente número)</span>
                                         </div>
@@ -132,7 +134,7 @@
                                    <div class="mb-3 col-md-6 col-lg-4">
                                         <label for="cep" class="form-label">CEP</label>
                                         <div class="input-group">
-                                             <input type="text" class="form-control" id="cep">
+                                             <input type="text" class="form-control" name="cep">
                                              <span class="input-group-text p-1">
                                                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
                                                        <path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z" />
@@ -142,19 +144,19 @@
                                    </div>
                                    <div class="mb-3 col-md-6 col-lg-8 align-self-end">
                                         <label for="rua" class="form-label">Rua</label>
-                                        <input type="text" class="form-control" id="rua">
+                                        <input type="text" class="form-control" name="rua">
                                    </div>
                                    <div class="mb-3 col-md-4">
                                         <label for="numero" class="form-label">Número</label>
-                                        <input type="number" class="form-control" id="numero" required>
+                                        <input type="number" class="form-control" name="numero" required>
                                    </div>
                                    <div class="mb-3 col-md-8">
                                         <label for="complemento" class="form-label">Complemento</label>
-                                        <input type="text" class="form-control" id="complemento" required >
+                                        <input type="text" class="form-control" name="complemento" required >
                                    </div>
                                    <div class="mb-3">
                                         <label for="referencia" class="form-label">Referência</label>
-                                        <input type="text" class="form-control" id="referencia" required>
+                                        <input type="text" class="form-control" name="referencia" required>
                                    </div>
                               </fieldset>
                               
@@ -162,25 +164,30 @@
                                    <legend>Senha de Acesso</legend>
                                    <div class="mb-3">
                                         <label for="senha" class="form-label">Senha</label>
-                                        <input type="password" class="form-control" id="senha" required >
+                                        <input type="password" class="form-control" name="senha" required >
                                    </div>
                                    <div class="mb-3">
                                         <label for="confsenha" class="form-label">Confimação da Senha</label>
-                                        <input type="password" class="form-control" id="confsenha">
+                                        <input type="password" class="form-control" name="confsenha" required>
                                    </div>
                               </fieldset>
                          </div>
                     </div>
                     <hr class="mt-3">
                     <div class="form-check mb-3">
-                         <input type="checkbox" class="form-check-input" value="" id="chkPromocoes">
+                         <input type="checkbox" class="form-check-input" value="" name="chkPromocoes">
                          <label for="chkPromocoes" class="form-check-label">Desejo receber ínformações sobre promoções.</label>
                     </div>
                     <div class="mb-3">
                          <a href="index.html" class="btn btn-light btn-outline-danger">Cancelar</a>
-                         <input type="button" value="Criar meu cadastro" class="btn btn-danger">
+                         <button type="submit" class="btn btn-danger">Salvar Usuário</button>
 
-                         
+                         <?php
+                        $mesagem = $_GET["msg"] ?? "";
+                        if ($mesagem == "sucesso") {
+                            echo "<em class='alert alert-primary'>Usuário e senha cadastrado com sucesso</em>";
+                        }
+                        ?>
                     </div>
                </form>
           </div>

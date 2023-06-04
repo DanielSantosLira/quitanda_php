@@ -49,7 +49,7 @@
                               </li>
 
                               <li class="nav-item">
-                                   <a href="login.php" class="nav-link text-white">Entrar</a>
+                                   <a href="cadastro-login.php" class="nav-link text-white">Entrar</a>
                               </li>
 
                               <li class="nav-item">

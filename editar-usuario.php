@@ -15,30 +15,6 @@
 
 </head>
 
-<?php
-
-$id = $_GET['id'];
-$nome = $cpf  = $datadenacimento = $email = $telefone = $cep = $rua = $numero = $complemento = $referencia = $senha = $conf_senha = "";
-include "conexao.php";
-$sql_buscar = "select * from usuario  where id = $id";
-$todos_os_usuario = mysqli_query($conexao, $sql_buscar);
-while ($um_usuario = mysqli_fetch_assoc($todos_os_usuario)) :
-    $nome = $um_usuario["nome"];
-    $cpf = $um_usuario["cpf"];
-    $datanacimento = $um_usuario["datanacimento"];
-    $email = $um_usuario["email"];
-    $telefone = $um_usuario["telefone"];
-    $cep = $um_usuario["cep"];
-    $rua = $um_usuario["rua"];
-    $numero = $um_usuario["numero"];
-    $complemento = $um_usuario["complemento"];
-    $referencia = $um_usuario["referencia"];
-    $senha = $um_usuario["senha"];
-    $confsenha = $um_usuario["confsenha"];
-
-endwhile;
-mysqli_close($conexao);
-?>
 
 <body style="min-width:372px;">
     <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom shadow-sm mb-3">
@@ -93,6 +69,31 @@ mysqli_close($conexao);
         </div>
     </nav>
     <main>
+    <?php
+
+$id = $_GET['id'];
+$nome = $cpf  = $datadenacimento = $email = $telefone = $cep = $rua = $numero = $complemento = $referencia = $senha = $conf_senha = "";
+include "conexao.php";
+$sql_buscar = "select * from usuario  where id = $id";
+$todos_os_usuario = mysqli_query($conexao, $sql_buscar);
+while ($um_usuario = mysqli_fetch_assoc($todos_os_usuario)) :
+    $nome = $um_usuario["nome"];
+    $cpf = $um_usuario["cpf"];
+    $datanacimento = $um_usuario["datanacimento"];
+    $email = $um_usuario["email"];
+    $telefone = $um_usuario["telefone"];
+    $cep = $um_usuario["cep"];
+    $rua = $um_usuario["rua"];
+    $numero = $um_usuario["numero"];
+    $complemento = $um_usuario["complemento"];
+    $referencia = $um_usuario["referencia"];
+    $senha = $um_usuario["senha"];
+    $confsenha = $um_usuario["confsenha"];
+
+endwhile;
+mysqli_close($conexao);
+?>
+
         <div class="container mt-3">
             <div class="col-12">
                 <h6>
@@ -100,14 +101,14 @@ mysqli_close($conexao);
                 </h6>
             </div>
             <div class="col-12">
-                <form action="salvar-usuario.php?id=<?php echo $id; ?>" method="post">
+                <form action="salvar-usuario-editado.php?id=<?php echo $id; ?>" method="post">
                     <div class="row">
                         <div class="col-12 col-md-6">
                             <legend>Editar Usuário</legend>
 
                             <div class="form-group mt-3">
                                 <label for="nome">Nome</label>
-                                <input name="nome" value="<?php echo $nome; ?>" class="form-control">
+                                <input name="nome"  value="<?php echo $nome; ?>" class="form-control">
                             </div>
                             <div class="form-group mt-3">
                                 <label for="cpf" class="form-label">CPF</label>
@@ -146,6 +147,7 @@ mysqli_close($conexao);
 
                             <div class="form-group mt-3">
                                 <input type="button" value="Editar meu usuário" class="btn btn-danger">
+                                <a href="listar-usuario.php" class="btn btn-light btn-outline-danger">Voltar</a>
 
                             </div>
 
