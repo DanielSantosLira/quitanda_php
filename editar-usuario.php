@@ -100,7 +100,7 @@ mysqli_close($conexao);
                 </h6>
             </div>
             <div class="col-12">
-                <form action="salvar-usuario-editado.php?id=<?php echo $id; ?>" method="post">
+                <form action="salvar-usuario.php?id=<?php echo $id; ?>" method="post">
                     <div class="row">
                         <div class="col-12 col-md-6">
                             <legend>Editar Usuário</legend>

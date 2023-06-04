@@ -75,8 +75,8 @@
             <div class="row">
                 <div class="col">
                     <table class="table table-hover-warning tabla-striped">
-                        <thead class="">
-                            <tr class="table-primary">
+                        <thead class="bg-danger text-white">
+                            <tr>
                                 <td>Codigo</td>
                                 <td>Título</td>
                                 <td>foto</td>
