@@ -113,6 +113,7 @@
                               echo "<em class='text-danger'>Usuário ou senha inválida</em>";
                          }
                          ?>
+                         
                          <p class="mt-3">
                               Ainda não é casdastrado? <a href="novo-usuario.php">Clique aqui</a> para se
                               cadastar
@@ -121,7 +122,7 @@
                          <p class="mt-3">
                               Esqueseu sua senha?<a href="recuperar-senha.php">Clique aqui</a> para
                           recuperé-la.
-                          </p>
+                         </p>
                     </form>
 
                </div>

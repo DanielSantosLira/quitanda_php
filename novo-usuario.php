@@ -183,8 +183,9 @@
                          <?php
                         $mesagem = $_GET["msg"] ?? "";
                         if ($mesagem == "sucesso") {
-                            echo "<em class='alert alert-primary'>Usuário e senha cadastrado com sucesso</em>";
+                            echo "<em class='alert alert-danger'>Usuário e senha cadastrado com sucesso</em>";
                         }
+                        
                         ?>
                     </div>
                </form>
