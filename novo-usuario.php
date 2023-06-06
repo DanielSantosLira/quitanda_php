@@ -1,5 +1,3 @@
-
-
 <!doctype html>
 <html lang="pt-br">
 
@@ -175,7 +173,7 @@
                     </div>
                     <hr class="mt-3">
                     <div class="form-check mb-3">
-                         <input type="checkbox" class="form-check-input" value="" name="chkPromocoes">
+                         <input type="checkbox" class="form-check-input"  name="chkPromocoes">
                          <label for="chkPromocoes" class="form-check-label">Desejo receber ínformações sobre promoções.</label>
                     </div>
                     <div class="mb-3">

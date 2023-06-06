@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="pt-br">
 
@@ -8,30 +9,6 @@
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
      <link rel="shortcut icon" href="img/banana-favicon.png" type="image/x-icon">
      <title>Quitanda Online :: Principal</title>
-
-
-     <style>
-          p.truncate {
-               display: -webkit-box;
-               -webkit-line-clamp: 3;
-               -webkit-box-orient: vertical;
-               overflow: hidden;
-               text-overflow: ellipsis;
-          }
-     </style>
-
-
-</head>
-
-
-
-<head>
-
-     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-     <link rel="shortcut icon" href="img/banana-favicon.png" type="image/x-icon">
-     <title>Quitanda Online :: Cadastro-Login</title>
 
 
      <style>
@@ -105,49 +82,56 @@
 
 
 
-    <main>
-        <div class="container">
-            <div class="row justify-content-center">
-                <form action="login.php" class="col-sm-10 col-md-8 col-lg-6">
-                    <h1 class="mb-3">Indentifique-se, por favor</h1>
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control" autofocus id="email">
-                        <label for="email">E-mail</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="password" class="form-control" autofocus id="senha">
-                        <label for="senha">Senha</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="password" class="form-control" autofocus id="confSenha">
-                        <label for="confSenha">Confirme a Senha</label>
-                    </div>
-                    <div class="form-check mb-3">
-                        <input type="checkbox" class="form-check-input" value="" id="lembrar">
-                        <label for="lembrar" class="form-check-label">Lembrar de mim</label>
-                    </div>
+     <main>
+          <div class="container">
+               <div class="row justify-content-center">
+                    <?php
+                    $mesagem = $_GET["msg"] ?? "";
+                    if ($mesagem == "erro") {
+                         echo "<em class='text-danger'>Usuário ou senha inválida</em>";
+                    }
+                    ?>
 
-                    <a href="painel.php" class="btn btn-lg btn-danger" type="button">Entar</a>
+                    <form action="login.php" method="post" class="col-sm-10 col-md-8 col-lg-6">
+                         <h1 class="mb-3">Indentifique-se, por favor</h1>
+                         <div class="form-floating mb-3">
+                              <input type="email" class="form-control" autofocus name="email">
+                              <label for="email">E-mail</label>
+                         </div>
+                         <div class="form-floating mb-3">
+                              <input type="password" class="form-control" autofocus name="senha">
+                              <label for="senha">Senha</label>
+                         </div>
+                         <div class="form-floating mb-3">
+                              <input type="password" class="form-control" autofocus name="confSenha">
+                              <label for="confSenha">Confirme a Senha</label>
+                         </div>
+                         <div class="form-check mb-3">
+                              <input type="checkbox" class="form-check-input" id="lembrar">
+                              <label for="lembrar" class="form-check-label">Lembrar de mim</label>
+                         </div>
 
-                    <p class="mt-3">
-                        Ainda não é casdastrado? <a href="usuario.php">Clique aqui</a> para se
-                        cadastar
-                    </p>
+                         <button class="btn btn-lg btn-danger" type="submit">Entar</button>
 
-                    <p class="mt-3">
-                        Esqueseu sua snha?<a href="recuperar-senha.php">Clique aqui</a> para
-                        recuperé-la.
+                         <p class="mt-3">
+                              Ainda não é casdastrado? <a href="usuario.php">Clique aqui</a> para se
+                              cadastar
+                         </p>
 
-                    </p>
+                         <p class="mt-3">
+                              Esqueseu sua snha?<a href="recuperar-senha.php">Clique aqui</a> para
+                              recuperé-la.
 
-                </form>
-            </div>
-        </div>
-    </main>
+                         </p>
+
+                    </form>
+               </div>
+          </div>
+     </main>
 
 
 
-    <div style="height: 273px;" class="d-block d-md-none"></div>
+     <div style="height: 273px;" class="d-block d-md-none"></div>
      <div style="height: 153px;" class="d-none d-md-block d-lg-none"></div>
      <div style="height: 129px;" class="d-none d-lg-block"></div>
 

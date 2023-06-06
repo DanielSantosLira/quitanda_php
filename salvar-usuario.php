@@ -8,9 +8,9 @@ $email = $_POST["email"];
 $telefone = $_POST ["telefone"];
 $cep = $_POST ["cep"];
 $rua = $_POST ["rua"];
-$numero =  $_POST ["numero"];
-$complemento = $_POST ["complemento"];
-$referencia =$_POST ["referencia"];
+$numero =  $_POST["numero"];
+$complemento = $_POST["complemento"];
+$referencia =$_POST["referencia"];
 $senha = $_POST["senha"];
 $confsenha = $_POST["confsenha"];
 

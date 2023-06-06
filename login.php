@@ -6,7 +6,7 @@ $senha = md5( $_POST["senha"]);
 $confSenha = md5( $_POST["confSenha"]);
 
 
- $sql_buscar_usuario = "select * from usuario where email = '$email' and senha = '$senha'  and senha = '$confSenha'";
+ $sql_buscar_usuario = "select * from usuario where email = '$email' and senha = '$senha'  and confSenha = '$confSenha'";
 
  $um_usuario = mysqli_query($conexao, $sql_buscar_usuario);
 

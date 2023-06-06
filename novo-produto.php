@@ -103,7 +103,7 @@
                         <?php
                         $mesagem = $_GET["msg"] ?? "";
                         if ($mesagem == "sucesso") {
-                            echo "<em class='alert alert-danger'>Produto  cadastrado com sucesso</em>";
+                            echo "<em class='alert alert-danger'>Produto cadastrado com sucesso</em>";
                         }
                         ?>
 

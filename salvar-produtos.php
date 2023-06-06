@@ -20,6 +20,6 @@ $um_produtos = mysqli_query($conexao, $sql_inserir_produtos);
 mysqli_close($conexao);
 
 
-header("location:novo-produto.php?msg=danger");
+header("location:novo-produto.php?msg=sucesso");
 
 ?>
