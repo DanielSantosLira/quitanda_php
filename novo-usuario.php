@@ -73,7 +73,7 @@
           <div class="container">
                <h1>Informe seus dados, por favor.</h1>
                <hr class="mt-3">
-               <form action="salvar-usuario.php" method="post">
+               <form action=" salvar-usuario.php" method="post">
                     <div class="row">
                          <div class="col-12 col-md-6">
                               <fieldset class="row">
@@ -165,8 +165,8 @@
                                         <input type="password" class="form-control" name="senha" required >
                                    </div>
                                    <div class="mb-3">
-                                        <label for="confsenha" class="form-label">Confimação da Senha</label>
-                                        <input type="password" class="form-control" name="confsenha" required>
+                                        <label for="Conf_senha" class="form-label">Confimação da Senha</label>
+                                        <input type="password" class="form-control" name="Conf_Senha" required>
                                    </div>
                               </fieldset>
                          </div>

@@ -12,12 +12,13 @@ $numero =  $_POST["numero"];
 $complemento = $_POST["complemento"];
 $referencia =$_POST["referencia"];
 $senha = $_POST["senha"];
-$confsenha = $_POST["confsenha"];
+$Conf_Senha = $_POST["Conf_Senha"];
 
+$sql_inserir_usuario = "insert into  usuario(nome, cpf, datanacimento, email, telefone, cep, rua, numero, complemento, referencia,  senha, Conf_Senha) values('values('$nome', '$cpf','$datanacimento', '$email', '$telefone', '$cep', '$rua','$numero','$complemento','$referencia' ,'" . md5($senha)  .md5($Conf_Senha). "')";
 
-$sql_inserir_usuario = "insert into  usuario(nome, cpf, datanacimento, email, telefone, cep, rua, numero, complemento, referencia,  senha, confsenha) values('$nome','$cpf','$datanacimento','$email','$telefone','$cep','$rua','$numero','$complemento','$referencia' ,'" . md5($senha) . " " . md5($confsenha) . "')";
 
 $um_usuario = mysqli_query($conexao, $sql_inserir_usuario);
+
 
 
 
