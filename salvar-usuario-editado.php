@@ -10,16 +10,15 @@ $rua = $_POST ["rua"];
 $numero =  $_POST ["numero"];
 $complemento = $_POST ["complemento"];
 $referencia =$_POST ["referencia"];
-$senha = $_POST["senha"];
-$confsenha = $_POST["confsenha"];
 
 
 include "conexao.php";
 
-$sql_inserir_usuario = "insert into  usuario(nome, cpf, datanacimento, email, telefone,
-cep, rua, numero, complemento, referencia,  senha, confsenha) values('$nome','$cpf','$datanacimento','$email','$telefone','$cep','$rua','$numero','$complemento','$referencia' ,'" . md5($senha) . ',' . md5($confsenha) . "')";
+$sql_iditar_usuario = "update usuario set nome= '$nome', cpf='$cpf', datanacimento='$datanacimento', email='$email', telefone='$telefone', cep='$cep',  numero='$numero', complemento='$complemento', referencia='$referencia',  senha='".md5($senha)." Conf_Senha='".md5($Conf_Senha)."' where id = $id";
 
+  
 $um_usuario = mysqli_query($conexao, $sql_iditar_usuario);
 
 header("location:listar-usuario.php?msg=sucesso");
 ?>
+

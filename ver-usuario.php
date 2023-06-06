@@ -71,7 +71,7 @@
 
 <?php
 $id = $_GET['id'];
- $nome = $cpf  = $datadenacimento = $email = $telefone = $cep = $rua = $numero = $complemento = $referencia = $senha = $conf_senha = "";
+ $nome = $cpf  = $datadenacimento = $email = $telefone = $cep = $rua = $numero = $complemento = $referencia =  "";
 include "conexao.php";
 $sql_buscar = "select * from usuario  where id = $id";
 $todos_os_usuario= mysqli_query($conexao, $sql_buscar);

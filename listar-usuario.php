@@ -133,7 +133,7 @@
                                     <td><?php echo $um_usuario["complemento"]; ?></td>
                                     <td><?php echo $um_usuario["referencia"]; ?></td>
                                     <td><?php echo $um_usuario["senha"]; ?></td>
-                                    <td><?php echo $um_usuario["confsenha"]; ?></td>
+                                    <td><?php echo $um_usuario["Conf_Senha"]; ?></td>
 
 
 
