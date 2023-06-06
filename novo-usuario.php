@@ -75,7 +75,7 @@
           <div class="container">
                <h1>Informe seus dados, por favor.</h1>
                <hr class="mt-3">
-               <form action=" salvar-usuario.php" method="post">
+               <form action="salvar-usuario.php" method="post">
                     <div class="row">
                          <div class="col-12 col-md-6">
                               <fieldset class="row">
