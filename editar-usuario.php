@@ -146,12 +146,20 @@ mysqli_close($conexao);
                                 <label for="referencia" class="form-label"> Referencia </label>
                                 <input name="referencia" value="<?php echo $referencia; ?>" class="form-control">
                             </div>
+                            <div class="form-group mt-3">
+                                <label for="senha" class="form-label"> Senha </label>
+                                <input name="senha" value="<?php echo $senha; ?>" class="form-control">
+                            </div>
+                            <div class="form-group mt-3">
+                                <label for="Conf_Senha" class="form-label"> Conf_Senha </label>
+                                <input name="Conf_Senha" value="<?php echo $Conf_Senha; ?>" class="form-control">
+                            </div>
                             
 
                             <div class="form-group mt-3">
                                
-                                <button type="submit" class="btn btn-danger">Editar meu usuário</button>
-                                <a href="ver-usuario.php" class="btn btn-light btn-outline-danger">Editar meu usuário</a>
+                                <button type="submit" class="btn btn-light btn-outline-danger">Editar meu usuário</button>
+                               
 
                             </div>
 

@@ -1,7 +1,7 @@
-++<?php
+<?php
 include "conexao.php";
 
-$id = $_GET["id"];
+
 $nome = $_POST["nome"];
 $cpf = $_POST["cpf"];
 $datanacimento = $_POST["datanacimento"];
@@ -26,6 +26,6 @@ $um_usuario = mysqli_query($conexao, $sql_inserir_usuario);
 mysqli_close($conexao);
 
 
-header("location:confirmar-cadastro.php?msg=sucesso");
+header("location:novo-usuario.php?msg=sucesso");
 
 ?>
