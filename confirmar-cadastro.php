@@ -1,3 +1,7 @@
+<?php
+
+include "conexao.php"
+?>
 <!doctype html>
 <html lang="pt-br">
 
@@ -67,8 +71,9 @@
           <div class="container">
                <h1>Confirmaçao de Cadastro</h1>
                <hr>
+               
                <p class="mt-3">
-                    caro <?php echo $um_usuario["nome"]; ?>
+                    caro<?php echo $um_usuario["nome"]; ?>
                </p>
                <p class="mt-3">
                     Obrigado por se cadastrar em nossa loja virtual. Um e-mail de confirmação foi enviado
@@ -91,6 +96,7 @@
                         ?>
                     <a href="index.php" class="btn btn-danger">Voltar á página Principal</a>
                </p>
+               </form>
           </div>
 
      </main>

@@ -58,7 +58,7 @@
                          <ul class="navbar-nav">
 
                               <li class="nav-item">
-                                   <a href="usuario.php" class="nav-link text-white">Quero Me Cadastrar</a>
+                                   <a href="novo-usuario.php" class="nav-link text-white">Quero Me Cadastrar</a>
                               </li>
 
                               <li class="nav-item">

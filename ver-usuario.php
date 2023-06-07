@@ -71,7 +71,7 @@
 
 <?php
 $id = $_GET['id'];
- $nome = $cpf  = $datadenacimento = $email = $telefone = $cep = $rua = $numero = $complemento = $referencia = $senha = $conf_senha = "";
+ $nome = $cpf  = $datadenacimento = $email = $telefone = $cep = $rua = $numero = $complemento = $referencia =  "";
 include "conexao.php";
 $sql_buscar = "select * from usuario  where id = $id";
 $todos_os_usuario= mysqli_query($conexao, $sql_buscar);
@@ -104,7 +104,7 @@ mysqli_close($conexao);
         
     </div>
     <div class="col-12">
-        <h3>Titulo: <?php echo   $datanacimento; ?> </h3>
+        <h3>Titulo: <?php echo  $datanacimento; ?> </h3>
         <p><?php echo $email;?></p>
         
     </div>
@@ -122,6 +122,10 @@ mysqli_close($conexao);
         <h3>Titulo: <?php echo    $complemento; ?> </h3>
         <p><?php echo  $referencia;?></p>
         
+    </div>
+
+    <div class="col-12">
+    <a href="listar-usuario.php" class="btn btn-light btn-outline-danger">Voltar</a>
     </div>
 </div>
 

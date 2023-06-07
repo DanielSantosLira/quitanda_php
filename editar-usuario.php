@@ -15,30 +15,6 @@
 
 </head>
 
-<?php
-
-$id = $_GET['id'];
-$nome = $cpf  = $datadenacimento = $email = $telefone = $cep = $rua = $numero = $complemento = $referencia = $senha = $conf_senha = "";
-include "conexao.php";
-$sql_buscar = "select * from usuario  where id = $id";
-$todos_os_usuario = mysqli_query($conexao, $sql_buscar);
-while ($um_usuario = mysqli_fetch_assoc($todos_os_usuario)) :
-    $nome = $um_usuario["nome"];
-    $cpf = $um_usuario["cpf"];
-    $datanacimento = $um_usuario["datanacimento"];
-    $email = $um_usuario["email"];
-    $telefone = $um_usuario["telefone"];
-    $cep = $um_usuario["cep"];
-    $rua = $um_usuario["rua"];
-    $numero = $um_usuario["numero"];
-    $complemento = $um_usuario["complemento"];
-    $referencia = $um_usuario["referencia"];
-    $senha = $um_usuario["senha"];
-    $confsenha = $um_usuario["confsenha"];
-
-endwhile;
-mysqli_close($conexao);
-?>
 
 <body style="min-width:372px;">
     <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom shadow-sm mb-3">
@@ -93,6 +69,31 @@ mysqli_close($conexao);
         </div>
     </nav>
     <main>
+    <?php
+
+$id = $_GET['id'];
+$nome = $cpf  = $datadenacimento = $email = $telefone = $cep = $rua = $numero = $complemento = $referencia = $senha = $Conf_Senha = "";
+include "conexao.php";
+$sql_buscar = "select * from usuario  where id = $id";
+$todos_os_usuario = mysqli_query($conexao, $sql_buscar);
+while ($um_usuario = mysqli_fetch_assoc($todos_os_usuario)) :
+    $nome = $um_usuario["nome"];
+    $cpf = $um_usuario["cpf"];
+    $datanacimento = $um_usuario["datanacimento"];
+    $email = $um_usuario["email"];
+    $telefone = $um_usuario["telefone"];
+    $cep = $um_usuario["cep"];
+    $rua = $um_usuario["rua"];
+    $numero = $um_usuario["numero"];
+    $complemento = $um_usuario["complemento"];
+    $referencia = $um_usuario["referencia"];
+    $senha = $um_usuario["senha"];
+    $Conf_Senha = $um_usuario["Conf_Senha"];
+
+endwhile;
+mysqli_close($conexao);
+?>
+
         <div class="container mt-3">
             <div class="col-12">
                 <h6>
@@ -107,11 +108,11 @@ mysqli_close($conexao);
 
                             <div class="form-group mt-3">
                                 <label for="nome">Nome</label>
-                                <input name="nome" value="<?php echo $nome; ?>" class="form-control">
+                                <input name="nome"  value="<?php echo $nome; ?>" class="form-control">
                             </div>
                             <div class="form-group mt-3">
                                 <label for="cpf" class="form-label">CPF</label>
-                                <input name="email" value="<?php echo $cpf; ?>" class="form-control">
+                                <input name="cpf" value="<?php echo $cpf; ?>" class="form-control">
                             </div>
                             <div class="form-group mt-3">
                                 <label for="datanacimento"> Data de Nacimento</label>
@@ -123,29 +124,34 @@ mysqli_close($conexao);
                             </div>
                             <div class="form-group mt-3">
                                 <label for="telefone" class="form-label">Telefone</label>
-                                <input name="email" value="<?php echo $telefone; ?>" class="form-control">
+                                <input name="telefone" value="<?php echo $telefone; ?>" class="form-control">
                             </div>
                             <div class="form-group mt-3">
                                 <label for="cep" class="form-label"> CEP </label>
-                                <input name="email" value="<?php echo $cep; ?>" class="form-control">
+                                <input name="cep" value="<?php echo $cep; ?>" class="form-control">
                             </div>
                             <div class="form-group mt-3">
                                 <label for="rua" class="form-label"> Rua</label>
-                                <input name="email" value="<?php echo $rua; ?>" class="form-control">
+                                <input name="rua" value="<?php echo $rua; ?>" class="form-control">
                             </div>
                             <div class="form-group mt-3">
                                 <label for="numero" class="form-label"> Número </label>
-                                <input name="email" value="<?php echo $numero; ?>" class="form-control">
+                                <input name="numero" value="<?php echo $numero; ?>" class="form-control">
                             </div>
                             <div class="form-group mt-3">
-                                <label for="senha">Senha</label> <input type="password" name="senha" value="<?php echo $senha; ?>" class="form-control">
+                                <label for="complemento" class="form-label"> Número </label>
+                                <input name="complemento" value="<?php echo $complemento; ?>" class="form-control">
                             </div>
                             <div class="form-group mt-3">
-                                <label for="confsenha">Confirme-Senha</label> <input type="password" name="confsenha" value="<?php echo $confsenha; ?>" class="form-control">
+                                <label for="referencia" class="form-label"> Referencia </label>
+                                <input name="referencia" value="<?php echo $referencia; ?>" class="form-control">
                             </div>
+                            
 
                             <div class="form-group mt-3">
-                                <input type="button" value="Editar meu usuário" class="btn btn-danger">
+                               
+                                <button type="submit" class="btn btn-danger">Editar meu usuário</button>
+                                <a href="ver-usuario.php" class="btn btn-light btn-outline-danger">Editar meu usuário</a>
 
                             </div>
 
