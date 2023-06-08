@@ -98,7 +98,7 @@
                               <label for="senha">Senha</label>
                          </div>
                          <div class="form-floating mb-3">
-                              <input type="password" class="form-control" autofocus aria-label="Senha" name="Conf-Senha" id="Conf-Senha">
+                              <input type="password" class="form-control" autofocus aria-label="Senha" name="Conf_Senha" id="Conf_Senha">
                               <label for="Conf-Senha">Confirme a Senha</label>
                          </div>
                          <div class="form-check mb-3">
