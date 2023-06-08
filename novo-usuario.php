@@ -153,8 +153,8 @@
                                         <input type="text" class="form-control" name="complemento" required >
                                    </div>
                                    <div class="mb-3">
-                                        <label for="referencia" class="form-label">Referência</label>
-                                        <input type="text" class="form-control" name="referencia" required>
+                                        <label for="cidade" class="form-label">Cidade</label>
+                                        <input type="text" class="form-control" name="cidade" required>
                                    </div>
                               </fieldset>
                               

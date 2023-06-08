@@ -11,7 +11,7 @@ $valor = $_POST["valor"];
 $estoque = $_POST["estoque"];
 
 
-$sql_inserir_produtos = "insert into  produtos(titulo, foto, foto1, foto2, video, categoria, valor, estoque) values('$titulo',' $foto',' $foto1',' $foto2 ',' $video ', '$categoria', ' $valor',' $estoque')";
+$sql_inserir_produtos = "insert into  produtos(titulo, foto, foto1, foto2, video, categoria, valor, estoque) values('$titulo','$foto','$foto1','$foto2 ', '$video ', '$categoria', '$valor','$estoque')";
 
 $um_produtos = mysqli_query($conexao, $sql_inserir_produtos);
 
@@ -20,6 +20,6 @@ $um_produtos = mysqli_query($conexao, $sql_inserir_produtos);
 mysqli_close($conexao);
 
 
-header("location:novo-produto.php?msg=sucesso");
+header("location:novo-produtos.php?msg=sucesso");
 
 ?>
