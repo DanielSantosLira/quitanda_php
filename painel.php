@@ -83,7 +83,7 @@
         <div class="col">
             <a href="listar-produtos.php" class="link-danger">Gerenciar produtos</a>
             <a href="listar-usuario.php" class="link-secondary">Gerenciar Usuário</a>
-            <a href="novo-produto.php" class="link-secondary">Cadastar produtos</a>
+            <a href="novo-produtos.php" class="link-secondary">Cadastar produtos</a>
         </div>
     </div>
 </div>
