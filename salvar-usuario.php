@@ -7,13 +7,15 @@ $datanacimento = $_POST["datanacimento"];
 $telefone = $_POST["telefone"];
 $cep = $_POST["cep"];
 $rua = $_POST["rua"];
+$complemento = $_POST["complemento"];
 $numero =$_POST["numero"];
-$complemento =$_POST["complemento"];
 $cidade =$_POST["cidade"];
+$Conf_Senha = $_POST["Conf_Senha"];
+
 
 include "conexao.php";
 
-$sql_inserir_usuario = "insert into usuario(nome, email, cpf, datanacimento, telefone, cep, rua, numero, complemento, cidade,Conf_Senha, senha) values('$nome','$email','$cpf','$datanacimento','$telefone','$cep','$rua','$numero','complemento','$cidade','" . md5($Conf_Senha) . "' ,'" . md5($senha) . "')";
+$sql_inserir_usuario = "insert into usuario(nome, email, cpf, datanacimento, telefone, cep, rua, complemento, numero, cidade,Conf_Senha, senha) values('$nome','$email','$cpf','$datanacimento','$telefone','$cep','$rua','$complemento','$numero','$cidade','" . md5($senha) . "','" . md5($senha) . "')";
 
 $um_usuario = mysqli_query($conexao, $sql_inserir_usuario);
 
