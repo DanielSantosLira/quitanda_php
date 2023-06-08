@@ -94,16 +94,13 @@
                                 <td>id</td>
                                 <td>Nome</td>
                                 <td>CPF</td>
-                                <td>Data/Nacimento</td>
+                               
                                 <td>Email</td>
                                 <td>Telefone</td>
                                 <td>CEP</td>
                                 <td>Rua</td>
                                 <td>Numero</td>
-                                <td>Comple</td>
-                                <td>Refe</td>
-                                <td>Senha</td>
-                                <td>Confi/Senha</td>
+                                <td>Cidade</td>
                                 <td>Ver</td>
                                 <th>Editar</td>
                                 <td>Deletar</td>
@@ -124,17 +121,14 @@
                                     <td><?php echo $um_usuario["id"]; ?></td>
                                     <td><?php echo $um_usuario["nome"]; ?></td>
                                     <td><?php echo $um_usuario["cpf"]; ?></td>
-                                    <td><?php echo $um_usuario["datanacimento"]; ?></td>
+                                   
                                     <td><?php echo $um_usuario["email"]; ?></td>
                                     <td><?php echo $um_usuario["telefone"]; ?></td>
                                     <td><?php echo $um_usuario["cep"]; ?></td>
                                     <td><?php echo $um_usuario["rua"]; ?></td>
                                     <td><?php echo $um_usuario["numero"]; ?></td>
-                                    <td><?php echo $um_usuario["complemento"]; ?></td>
-                                    <td><?php echo $um_usuario["referencia"]; ?></td>
-                                    <td><?php echo $um_usuario["senha"]; ?></td>
-                                    <td><?php echo $um_usuario["Conf_Senha"]; ?></td>
-
+                                    <td><?php echo $um_usuario["cidade"]; ?></td>
+                                    
 
 
 

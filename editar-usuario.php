@@ -86,7 +86,7 @@ while ($um_usuario = mysqli_fetch_assoc($todos_os_usuario)) :
     $rua = $um_usuario["rua"];
     $numero = $um_usuario["numero"];
     $complemento = $um_usuario["complemento"];
-    $referencia = $um_usuario["referencia"];
+    $cidade = $um_usuario["cidade"];
     $senha = $um_usuario["senha"];
     $Conf_Senha = $um_usuario["Conf_Senha"];
 
@@ -143,8 +143,8 @@ mysqli_close($conexao);
                                 <input name="complemento" value="<?php echo $complemento; ?>" class="form-control">
                             </div>
                             <div class="form-group mt-3">
-                                <label for="referencia" class="form-label"> Referencia </label>
-                                <input name="referencia" value="<?php echo $referencia; ?>" class="form-control">
+                                <label for="cidade" class="form-label"> Cidade </label>
+                                <input name="cidade" value="<?php echo $cidade; ?>" class="form-control">
                             </div>
                             <div class="form-group mt-3">
                                 <label for="senha" class="form-label"> Senha </label>
@@ -159,8 +159,8 @@ mysqli_close($conexao);
                             <div class="form-group mt-3">
                                
                                 <button type="submit" class="btn btn-light btn-outline-danger">Editar meu usuário</button>
+                                <a href="listar-usuario.php" class="btn btn-light btn-outline-danger">Voltar</a>
                                
-
                             </div>
 
                         </div>
