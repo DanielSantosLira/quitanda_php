@@ -71,7 +71,7 @@
     <main>
     <?php
 
-$id = $_GET['id'];
+$id = $_GET["id"];
 $nome = $cpf  = $datadenacimento = $email = $telefone = $cep = $rua = $numero = $complemento = $referencia = $senha = $Conf_Senha = "";
 include "conexao.php";
 $sql_buscar = "select * from usuario  where id = $id";
