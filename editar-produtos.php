@@ -72,9 +72,9 @@
     <main>
         <?php
         $id = $_GET['id'];
-        $titulo = $categoria = $video = $foto = $foto1 = $foto2 =  $valor =  $estoque =  "";
+        $titulo = $categoria = $video = $foto = $foto1 = $foto2 =  $valor =  $estoque = "";
         include "conexao.php";
-        $sql_buscar = "select * from produtos  where id = $id";
+        $sql_buscar = "select * from produtos where id = $id";
         $todos_os_produtos = mysqli_query($conexao, $sql_buscar);
         while ($um_produtos = mysqli_fetch_assoc($todos_os_produtos)) :
             $titulo = $um_produtos["titulo"];
@@ -84,7 +84,7 @@
             $foto1 = $um_produtos["foto1"];
             $foto2 = $um_produtos["foto2"];
             $valor = $um_produtos["valor"];
-            $estoque =  $um_produtos["estoque"];
+            $estoque = $um_produtos["estoque"];
 
         endwhile;
         mysqli_close($conexao);
