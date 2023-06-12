@@ -94,7 +94,6 @@
                                 <td>id</td>
                                 <td>Nome</td>
                                 <td>CPF</td>
-                               
                                 <td>Email</td>
                                 <td>Telefone</td>
                                 <td>CEP</td>
@@ -121,7 +120,6 @@
                                     <td><?php echo $um_usuario["id"]; ?></td>
                                     <td><?php echo $um_usuario["nome"]; ?></td>
                                     <td><?php echo $um_usuario["cpf"]; ?></td>
-                                   
                                     <td><?php echo $um_usuario["email"]; ?></td>
                                     <td><?php echo $um_usuario["telefone"]; ?></td>
                                     <td><?php echo $um_usuario["cep"]; ?></td>
@@ -168,6 +166,9 @@
                         </table>
 
                     </div>
+                    <div class="col-12">
+                            <a href="painel.php" class="btn btn-light btn-outline-danger">Voltar</a>
+                        </div>
 
                 </div>
             </div>

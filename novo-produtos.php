@@ -44,7 +44,7 @@
                     <ul class="navbar-nav flex-grow-1">
 
                          <li class="nav-item">
-                              <a href="#" class="nav-link text-white">Principal</a>
+                              <a href="index.php" class="nav-link text-white">Principal</a>
                          </li>
 
                          <li class="nav-item">
@@ -99,6 +99,7 @@
                         <input type="estoque" name="estoque" class="form-control me-2" required placeholder="estoque"> <br>
 
                         <button type="submit" class="btn btn-danger">Salvar Produto</button>
+                        <a href="painel.php" class="btn btn-light btn-outline-danger">Voltar</a>
 
                         <?php
                         $mesagem = $_GET["msg"] ?? "";
@@ -108,6 +109,8 @@
                         ?>
 
                     </div>
+                    
+
                 </form>
             </div>
         </div>

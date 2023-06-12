@@ -1,16 +1,20 @@
 <?php
-$email = $_POST["email"];
-$senha = $_POST["senha"];
-
 include "conexao.php";
-$sql_buscar_usuario = "select * from usuario where email = '$email' and senha = '" . md5($senha) . "'";
 
-$um_usuario = mysqli_query($conexao, $sql_buscar_usuario);
+$email = $_POST["email"];
+$senha = md5( $_POST["senha"]);
+$Conf_Senha = md5( $_POST["Conf_Senha"]);
 
-if($um_usuario->num_rows > 0){
+
+$sql_buscar_usuario = "select * from usuario where email = '$email' and senha = '$senha' and conf_Senha = '$Conf_Senha'";
+
+ $um_usuario = mysqli_query($conexao, $sql_buscar_usuario);
+
+ if($um_usuario->num_rows > 0){
     header("location:painel.php");
-}else{
-    header("location:index.php?msg=erro");
-}
-mysqli_close($conexao);
+
+ }else{
+    header("location:cadastro-login.php?msg=erro");
+ }
+    mysqli_close($conexao);
 ?>

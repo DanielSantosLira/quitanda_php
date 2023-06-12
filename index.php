@@ -239,7 +239,7 @@
 
                                    <div class="card-footer">
 
-                                        <a href="<?php echo $um_produtos["video"]; ?>" class="btn btn-danger">
+                                        <a href="carrinho.php?add=carrinho&id='$carrinho['id']" class="btn btn-danger">
                                              Adicionar ao Carrinho
                                         </a>
 

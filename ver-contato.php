@@ -6,30 +6,19 @@
      <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
      <link rel="shortcut icon" href="img/banana-favicon.png" type="image/x-icon">
-     <title>Quitanda Online :: Contato</title>
+     <title>Quitanda Online :: Cadastro</title>
 
 
-     <style>
-          p.truncate {
-               display: -webkit-box;
-               -webkit-line-clamp: 3;
-               -webkit-box-orient: vertical;
-               overflow: hidden;
-               text-overflow: ellipsis;
-          }
-     </style>
 
 
 </head>
 
-
 <body style="min-width:372px;">
-
      <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom shadow-sm mb-3">
 
           <div class="container">
-
 
                <a href="#" class="navbar-brand"><strong>Quintanda Online</strong></a>
 
@@ -44,7 +33,7 @@
                     <ul class="navbar-nav flex-grow-1">
 
                          <li class="nav-item">
-                              <a href="#" class="nav-link text-white">Principal</a>
+                              <a href="index.php" class="nav-link text-white">Principal</a>
                          </li>
 
                          <li class="nav-item">
@@ -58,11 +47,11 @@
                          <ul class="navbar-nav">
 
                               <li class="nav-item">
-                                   <a href="novo-usuario.php" class="nav-link text-white">Quero Me Cadastrar</a>
+                                   <a href="cadastro.php" class="nav-link text-white">Quero Me Cadastrar</a>
                               </li>
 
                               <li class="nav-item">
-                                   <a href="cadastro-login.php" class="nav-link text-white">Entrar</a>
+                                   <a href="login.php" class="nav-link text-white">Entrar</a>
                               </li>
 
                               <li class="nav-item">
@@ -78,35 +67,50 @@
                </div>
           </div>
      </nav>
-   
-  
-     <main>
-          <div class="container">
-               <h1>Mensagem Recibida!</h1>
-               <hr>
-               <p>
-                    Caro Cliente,
-               </p>
-               <p>
-                    Informamos que sua mansagem foi recebida com sucesso por nossa central de
-                    relacionamento com clientes e que em até <b>2 dias úteis</b> ela será respondida.
-                    Para evitarmos problema de comunicação, evite reeviar esta mesma mensagem
-                    dentro do prazo de resposta.
-               </p>
-               <p>
-                    Agradecemos pela confiança em nosso serviços.
-               </p>
-               <p>
-                    Condialmente,<br>
-                    Central de Relacionamento Quitanda Onlíne.
-               </p>
 
-              
-               <a href="index.php" class="btn btn-light btn-outline-danger">Voltar</a>
+
+     <?php
+     $id = $_GET['id'];
+     $nome = $email = $msg = "";
+     include "conexao.php";
+     $sql_buscar = "select * from contato  where id = $id";
+     $todos_os_contato = mysqli_query($conexao, $sql_buscar);
+     while ($um_contato = mysqli_fetch_assoc($todos_os_contato)):
+          $nome = $um_contato["nome"];
+     
+          $email = $um_contato["email"];
+         
+          $msg = $um_contato["msg"];
+        
+          
+         
+     endwhile;
+     mysqli_close($conexao);
+     ?>
+
+     <div class="container mt-3">
+          <div class="col-12">
+               <h6>
+                    Detalhe do Contato Cód.: <?php echo $id; ?>
+               </h6>
           </div>
-       
+          <div class="col-12">
+               <h3>Titulo: <?php echo $nome; ?> </h3>
+               <p><?php echo  $email; ?></p>
 
-     </main>
+          </div>
+          <div class="col-12">
+               
+               <p><?php echo $msg; ?></p>
+
+          </div>
+          
+          <div class="col-12">
+               <a href="listar-contato.php" class="btn btn-light btn-outline-danger">Voltar</a>
+          </div>
+     </div>
+
+
 
      <div style="height: 273px;" class="d-block d-md-none"></div>
      <div style="height: 153px;" class="d-none d-md-block d-lg-none"></div>
@@ -158,7 +162,9 @@
 
      </footer>
 
-     <script src="\node_modules\bootstrap\dist\js\bootstrap.bundle.js"></script>
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 
 </html>

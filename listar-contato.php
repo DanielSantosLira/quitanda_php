@@ -1,7 +1,3 @@
-<?php
-
-include "conexao.php"
-?>
 <!doctype html>
 <html lang="pt-br">
 
@@ -11,14 +7,29 @@ include "conexao.php"
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="shortcut icon" href="img/banana-favicon.png" type="image/x-icon">
-    <title>Quitanda Online :: Contato</title>
+    <title>Quitanda Online :: listar-Usuario</title>
+
+
+    <style>
+        p.truncate {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+
 
 </head>
 
-<body style="min-width: 372px;">
+
+<body style="min-width:372px;">
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom shadow-sm mb-3">
 
         <div class="container">
+
 
             <a href="#" class="navbar-brand"><strong>Quintanda Online</strong></a>
 
@@ -33,11 +44,11 @@ include "conexao.php"
                 <ul class="navbar-nav flex-grow-1">
 
                     <li class="nav-item">
-                        <a href="index.php" class="nav-link text-white">Principal</a>
+                        <a href="#" class="nav-link text-white">Principal</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-white">Contatos</a>
+                        <a href="contato.php" class="nav-link text-white">Contatos</a>
                     </li>
                 </ul>
 
@@ -47,15 +58,15 @@ include "conexao.php"
                     <ul class="navbar-nav">
 
                         <li class="nav-item">
-                            <a href="usuario.php" class="nav-link text-white">Quero Me Cadastrar</a>
+                            <a href="novo-usuario.php" class="nav-link text-white">Quero Me Cadastrar</a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-white">Entrar</a>
+                            <a href="cadastro-login.php" class="nav-link text-white">Entrar</a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-white">
+                            <a href="carrinho.php" class="nav-link text-white">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-dash text-whitgh" viewBox="0 0 16 16">
                                     <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z" />
                                     <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
@@ -68,42 +79,91 @@ include "conexao.php"
         </div>
     </nav>
     <main>
-          <div class="container">
-               <h1>Confirmaçao de Cadastro</h1>
-               <hr>
-               
-               <p class="mt-3">
-                    caro<?php echo $um_usuario["nome"]; ?>
-               </p>
-               <p class="mt-3">
-                    Obrigado por se cadastrar em nossa loja virtual. Um e-mail de confirmação foi enviado
-                    para <b>email@dominio.com.br</b>.Clique no link de canfirmação presente no
-                    e-mail para concluirmos seu cadastro
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Lista de Contato</h1>
+                </div>
+            </div>
+            <div class="container mt-2">
+                <div class="row">
+                    <div class="table-responsive">
+                        <table class="table  table-hover-warning tabla-striped ">
 
-               </p>
+                            <tr class="bg-danger text-white">
+                                <td>id</td>
+                                <td>Nome</td>
+                                <td>Email</td>
+                                <td>Mensagem</td>
+                                <td>Ver</td>
+                                <td>Excluir</td>
 
-               <p class="mt-3">
-                    Desede já agradecemos pela confiança em nosso serviço.
-                    central de Relacionamento Quitanda Onlíne
 
-               </p>
-               <p class="mt-3">
-               <?php
-                        $mesagem = $_GET["msg"] ?? "";
-                        if ($mesagem == "sucesso") {
-                            echo "<em class='alert alert-primary'>Usuário e senha cadastrado com sucesso</em>";
-                        }
-                        ?>
-                    <a href="index.php" class="btn btn-danger">Voltar á página Principal</a>
-               </p>
-               </form>
-          </div>
+                            </tr>
 
-     </main>
+
+                            <?php
+                            include "conexao.php";
+                            $sql_buscar = "select * from contato";
+
+                            $todos_os_contato = mysqli_query($conexao, $sql_buscar);
+
+                            while ($um_contato = mysqli_fetch_assoc($todos_os_contato)) :
+                            ?>
+                                <tr>
+
+                                    <td><?php echo $um_contato["id"]; ?></td>
+                                    <td><?php echo $um_contato["nome"]; ?></td>
+                                    <td><?php echo $um_contato["email"]; ?></td>
+                                    <td><?php echo $um_contato["msg"]; ?></td>
+
+
+
+
+                                    <td>
+                                        <a href="ver-contato.php?id=<?php echo $um_contato["id"]; ?>" class="btn btn-light btn-outline-danger">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                            </svg>
+
+                                        </a>
+
+                                    </td>
+
+                                    <td>
+                                        <a href="excluir-contato.php?id=<?php echo $um_contato["id"]; ?>" class="btn btn-light btn-outline-danger">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash text-denger" viewBox="0 0 16 16">
+                                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z" />
+                                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z" />
+                                            </svg>
+
+                                        </a>
+                                    </td>
+                                </tr>
+
+
+                            <?php
+                            endwhile;
+                            mysqli_close($conexao);
+                            ?>
+
+                        </table>
+                        <div class="col-12">
+                            <a href="painel.php" class="btn btn-light btn-outline-danger">Voltar</a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
 
     <div style="height: 273px;" class="d-block d-md-none"></div>
     <div style="height: 153px;" class="d-none d-md-block d-lg-none"></div>
     <div style="height: 129px;" class="d-none d-lg-block"></div>
+
 
     <footer class="border-top fixed-bottom text-muted bg-light">
 
@@ -150,7 +210,10 @@ include "conexao.php"
 
     </footer>
 
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

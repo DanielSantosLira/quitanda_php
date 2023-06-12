@@ -137,8 +137,8 @@
                                              </button>
                                         </div>
                                         <div class="text-right mt-2">
-                                             <small class="text-secondary">Valor Kg: R$ 3,99</small><br>
-                                             <small class="text-dark">Valor Item: R$ 7,98</small>
+                                             <small class="text-secondary">Valor Kg:R$ <?php echo $um_carrinho["preco"]; ?></small><br>
+                                             <small class="text-dark">Valor Item: R$ <?php echo $um_carrinho["preco"]; ?></small>
                                         </div>
                                    </div>
                               </div>

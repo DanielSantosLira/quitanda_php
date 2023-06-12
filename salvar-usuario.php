@@ -21,5 +21,5 @@ $um_usuario = mysqli_query($conexao, $sql_inserir_usuario);
 
 mysqli_close($conexao);
 
-header("location:novo-usuario.php?msg=sucesso");
+header("location:confirmar-usuario.php?msg=sucesso");
 ?>

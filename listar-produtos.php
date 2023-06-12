@@ -3,22 +3,22 @@
 
 <head>
 
-     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-     <link rel="shortcut icon" href="img/banana-favicon.png" type="image/x-icon">
-     <title>Quitanda Online :: Principal</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/banana-favicon.png" type="image/x-icon">
+    <title>Quitanda Online :: Principal</title>
 
 
-     <style>
-          p.truncate {
-               display: -webkit-box;
-               -webkit-line-clamp: 3;
-               -webkit-box-orient: vertical;
-               overflow: hidden;
-               text-overflow: ellipsis;
-          }
-     </style>
+    <style>
+        p.truncate {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
 
 
 </head>
@@ -26,58 +26,58 @@
 
 <body style="min-width:372px;">
 
-     <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom shadow-sm mb-3">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom shadow-sm mb-3">
 
-          <div class="container">
+        <div class="container">
 
 
-               <a href="#" class="navbar-brand"><strong>Quintanda Online</strong></a>
+            <a href="#" class="navbar-brand"><strong>Quintanda Online</strong></a>
 
-               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
 
-                    <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
 
-               </button>
+            </button>
 
-               <div class="navbar-collapse collapse">
+            <div class="navbar-collapse collapse">
 
-                    <ul class="navbar-nav flex-grow-1">
+                <ul class="navbar-nav flex-grow-1">
 
-                         <li class="nav-item">
-                              <a href="index.php" class="nav-link text-white">Principal</a>
-                         </li>
+                    <li class="nav-item">
+                        <a href="index.php" class="nav-link text-white">Principal</a>
+                    </li>
 
-                         <li class="nav-item">
-                              <a href="contato.php" class="nav-link text-white">Contatos</a>
-                         </li>
+                    <li class="nav-item">
+                        <a href="contato.php" class="nav-link text-white">Contatos</a>
+                    </li>
+                </ul>
+
+
+                <div class="align-self-end">
+
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a href="novo-usuario.php" class="nav-link text-white">Quero Me Cadastrar</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="cadastro-login.php" class="nav-link text-white">Entrar</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="carrinho.php" class="nav-link text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-dash text-whitgh" viewBox="0 0 16 16">
+                                    <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z" />
+                                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
-
-
-                    <div class="align-self-end">
-
-                         <ul class="navbar-nav">
-
-                              <li class="nav-item">
-                                   <a href="novo-usuario.php" class="nav-link text-white">Quero Me Cadastrar</a>
-                              </li>
-
-                              <li class="nav-item">
-                                   <a href="cadastro-login.php" class="nav-link text-white">Entrar</a>
-                              </li>
-
-                              <li class="nav-item">
-                                   <a href="carrinho.php" class="nav-link text-white">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-dash text-whitgh" viewBox="0 0 16 16">
-                                             <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z" />
-                                             <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
-                                        </svg>
-                                   </a>
-                              </li>
-                         </ul>
-                    </div>
-               </div>
-          </div>
-     </nav>
+                </div>
+            </div>
+        </div>
+    </nav>
     <main>
         <div class="container">
             <div class="row">
@@ -113,11 +113,11 @@
                                 <tr>
                                     <td><?php echo $um_produtos["id"]; ?></td>
                                     <td><?php echo $um_produtos["titulo"]; ?></td>
-                                    <td><?php echo $um_produtos["foto"]; ?></td>
+                                    <td><img src="<?php echo $foto=$um_produtos["foto"]; ?>" alt="" width="50"></td>
                                     <td><?php echo $um_produtos["categoria"]; ?></td>
                                     <td><?php echo $um_produtos["estoque"]; ?></td>
                                     <td><?php echo $um_produtos["valor"]; ?></td>
-                                    
+
                                     <td>
                                         <a href="ver-produtos.php?id=<?php echo $um_produtos["id"]; ?>" class="btn btn-light btn-outline-danger">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
@@ -153,6 +153,9 @@
 
                     </table>
 
+                </div>
+                <div class="col-12">
+                    <a href="painel.php" class="btn btn-light btn-outline-danger">Voltar</a>
                 </div>
 
             </div>
