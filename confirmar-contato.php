@@ -79,13 +79,13 @@
           </div>
      </nav>
    
-  
+ 
      <main>
           <div class="container">
                <h1>Mensagem Recibida!</h1>
                <hr>
                <p>
-                    Caro Cliente,
+                    Caro Cliente, 
                </p>
                <p>
                     Informamos que sua mansagem foi recebida com sucesso por nossa central de
