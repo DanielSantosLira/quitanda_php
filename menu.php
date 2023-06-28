@@ -44,7 +44,7 @@
                     <ul class="navbar-nav flex-grow-1">
 
                          <li class="nav-item">
-                              <a href="#" class="nav-link text-white">Principal</a>
+                              <a href="index.php" class="nav-link text-white">Principal</a>
                          </li>
 
                          <li class="nav-item">
@@ -80,7 +80,8 @@
      </nav>
 
 
- 
+   
+
 
      <footer class="border-top fixed-bottom text-muted bg-light">
 
