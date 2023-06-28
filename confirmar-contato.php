@@ -3,7 +3,6 @@ include "menu.php";
 ?>
 
 
-
 <main>
      <div class="container">
           <h1>Mensagem Recibida!</h1>
