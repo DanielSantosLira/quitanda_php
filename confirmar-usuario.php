@@ -71,10 +71,10 @@ include "conexao.php"
       
      
     <?php
-     $id = $_GET['id'];
-     $nome = $email = $telefone = "";
+     
+     $nome = $email =  "";
      include "conexao.php";
-     $sql_buscar = "select * from usuario  where id = $id";
+     $sql_buscar = "SELECT * FROM usuario ORDER BY id DESC LIMIT 1";
      $todos_os_usuario = mysqli_query($conexao, $sql_buscar);
      while ($um_usuario = mysqli_fetch_assoc($todos_os_usuario)):
           $nome = $um_usuario["nome"];
