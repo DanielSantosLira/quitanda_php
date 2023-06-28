@@ -2,9 +2,6 @@
  include "menu.php";
 ?>
 
-
-
-
      <main>
 
           <div class="container">
