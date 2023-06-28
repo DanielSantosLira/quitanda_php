@@ -26,7 +26,7 @@
 
 <body style="min-width:372px;">
 
-   <!--   <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom shadow-sm mb-3">
+     <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom shadow-sm mb-3">
 
           <div class="container">
 
@@ -78,7 +78,7 @@
                </div>
           </div>
      </nav>
- -->
+
      <header class="container">
           <div id="carouselMain" class="carousel carousel-white slide " data-ride="carousel">
 
@@ -317,7 +317,7 @@
      <div style="height: 129px;" class="d-none d-lg-block"></div>
 
 
-     <!-- <footer class="border-top fixed-bottom text-muted bg-light">
+  <footer class="border-top fixed-bottom text-muted bg-light">
 
           <div class="container">
 

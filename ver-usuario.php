@@ -163,7 +163,7 @@
                          <svg width="15" height="15" fill="currentColor" class="bi">
                               <use xlink:href="/bi.svg#envelope" class="text-primary">
                          </svg>
-                         E-mail:<a href="danielsplira@gmail.com" class="text-decoration-none text-secondary">danielsplira@gmail.com</a><br>
+                         E-mail:<a href="danielsplira@gmail.com" class="text-decoration-none text-secondary">quitanda_online@gmail.com</a><br>
                          <svg width="15" height="15" fill="currentColor" class="bi text-danger">
                               <use xlink:href="/bi.svg#telephone">
                          </svg>
