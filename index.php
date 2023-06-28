@@ -1,25 +1,10 @@
-<!doctype html>
-<html lang="pt-br">
-
-<head>
-
-     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-     <link rel="shortcut icon" href="img/banana-favicon.png" type="image/x-icon">
-     <title>Quitanda Online :: Principal</title>
+<?php 
+include "menu.php"
+?>
 
 
-     <style>
-          p.truncate {
-               display: -webkit-box;
-               -webkit-line-clamp: 3;
-               -webkit-box-orient: vertical;
-               overflow: hidden;
-               text-overflow: ellipsis;
-          }
-     </style>
 
+<<<<<<< HEAD
 
 </head>
 
@@ -79,6 +64,9 @@
           </div>
      </nav>
 
+=======
+  
+>>>>>>> 475f1f3766842e1176fde63498f12d26476b6eb0
      <header class="container">
           <div id="carouselMain" class="carousel carousel-white slide " data-ride="carousel">
 
@@ -312,11 +300,10 @@
 
      </main>
 
-     <div style="height: 273px;" class="d-block d-md-none"></div>
-     <div style="height: 153px;" class="d-none d-md-block d-lg-none"></div>
-     <div style="height: 129px;" class="d-none d-lg-block"></div>
+    
 
 
+<<<<<<< HEAD
   <footer class="border-top fixed-bottom text-muted bg-light">
 
           <div class="container">
@@ -367,3 +354,6 @@
 </body>
 
 </html>
+=======
+   
+>>>>>>> 475f1f3766842e1176fde63498f12d26476b6eb0
