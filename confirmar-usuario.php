@@ -30,11 +30,11 @@ include "conexao.php"
           <div class="container">
             
         
-               <h1>Confirmaçao de Cadastro : </h1>
+               <h1>Confirmaçao de Cadastro </h1>
                <hr>
               
                <p  class="mt-3">
-                    Caro  <b><?php echo $nome; ?></b>
+                    Caro  <?php echo $nome; ?>
                </p>
                <p class="mt-3">
                     Obrigado por se cadastrar em nossa loja virtual.  Um e-mail de confirmação foi enviado
