@@ -12,14 +12,14 @@ include "menu.php";
               </p>
               <p>
                Sua senha foi cadastrada com sucesso. Pra entar em sua área restrita agora 
-                  mesmo, 
+                  mesmo. 
               </p>
               <a href="login.php" class="btn btn-danger mb-2">clique aqui</a>
               <p>
                Agradecemos pela confiença en nosso serviços.
               </p>
               <p>
-               Cordialmente, <br>
+               Cordialmente. <br>
                Central de Relacionamento Quitanda Onlíne.
               </p>
               <p>
