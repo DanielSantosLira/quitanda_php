@@ -12,8 +12,9 @@ include "menu.php";
               </p>
               <p>
                Sua senha foi cadastrada com sucesso. Pra entar em sua área restrita agora 
-                  mesmo, <a href="login.php" class="btn btn-danger">clique aqui</a>
+                  mesmo, 
               </p>
+              <a href="login.php" class="btn btn-danger">clique aqui</a>
               <p>
                Agradecemos pela confiença en nosso serviços.
               </p>
