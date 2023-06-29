@@ -4,11 +4,27 @@ include "menu.php";
 
 
 <main>
+<?php
+     
+     $nome =  "";
+     include "conexao.php";
+     $sql_buscar = "SELECT * FROM contato ORDER BY id DESC LIMIT 1";
+     $todos_os_contato = mysqli_query($conexao, $sql_buscar);
+     while ($um_contato = mysqli_fetch_assoc($todos_os_contato)):
+          $nome = $um_contato["nome"];
+         
+         
+         
+          
+         
+     endwhile;
+     mysqli_close($conexao);
+     ?>
      <div class="container">
           <h1>Mensagem Recibida!</h1>
           <hr>
           <p>
-               Caro Cliente,
+               Caro Cliente, <?php echo $nome; ?>
           </p>
           <p>
                Informamos que sua mansagem foi recebida com sucesso por nossa central de
