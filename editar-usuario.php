@@ -75,8 +75,8 @@ include "menu.php";
                             <input name="numero" value="<?php echo $numero; ?>" class="form-control">
                         </div>
                         <div class="form-group mt-3">
-                            <label for="complemento" class="form-label"> Número </label>
-                            <input name="complemento" value="<?php echo $complemento; ?>" class="form-control">
+                            <label for="complemento" class="form-label">Referencia </label>
+                            <input name="complemento" value="<?php echo $referencia; ?>" class="form-control">
                         </div>
                         <div class="form-group mt-3">
                             <label for="cidade" class="form-label"> Cidade </label>
@@ -106,3 +106,7 @@ include "menu.php";
 
     </div>
 </main>
+
+<div style="height: 273px;" class="d-block d-md-none"></div>
+<div style="height: 153px;" class="d-none d-md-block d-lg-none"></div>
+<div style="height: 129px;" class="d-none d-lg-block"></div>

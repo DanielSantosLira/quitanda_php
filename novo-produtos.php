@@ -38,3 +38,7 @@ include "menu.php";
           </div>
      </div>
 </div>
+
+<div style="height: 273px;" class="d-block d-md-none"></div>
+<div style="height: 153px;" class="d-none d-md-block d-lg-none"></div>
+<div style="height: 129px;" class="d-none d-lg-block"></div>

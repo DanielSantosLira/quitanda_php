@@ -1,35 +1,28 @@
 <?php
 include "menu.php";
 ?>
+<?php
+
+$email = 'email';
+$senha = 123;
+$Conf_Senha = 123;
 
 
+include "conexao.php";
 
-<main>
-     <?php
-     include "conexao.php";
+$sql_iditar_usuario = "UPDATE usuario set  senha=md5($senha) , Conf_Senha=md5($Conf_Senha) where email = $email";
 
-     $email = $_POST["email"];
-     $senha = md5($_POST["senha"]);
-     $Conf_Senha = md5($_POST["Conf_Senha"]);
+$um_usuario = mysqli_query($conexao, $sql_iditar_usuario);
 
 
-     $sql_buscar_usuario = "update * from usuario where email = '$email' and senha = '$senha' and conf_Senha = '$Conf_Senha'";
+?>
 
-     $um_usuario = mysqli_query($conexao, $sql_buscar_usuario);
-
-     if ($um_usuario->num_rows > 0) {
-          header("location:painel.php");
-     } else {
-          header("location:cadastro-login.php?msg=erro");
-     }
-     mysqli_close($conexao);
-     ?>
 
      <div class="container">
           <h1>Instruções Enviadas!</h1>
           <hr>
           <p class="mt-3">
-               caro <strong>Cliente</strong>
+               caro sua Nova <?php echo $senha ?> 
           </p>
           <p class="mt-3">
                As instruções para a recuperação de cadastro de uma nova senha foram enviadas para o
@@ -52,3 +45,6 @@ include "menu.php";
      </div>
 
 </main>
+<div style="height: 273px;" class="d-block d-md-none"></div>
+<div style="height: 153px;" class="d-none d-md-block d-lg-none"></div>
+<div style="height: 129px;" class="d-none d-lg-block"></div>

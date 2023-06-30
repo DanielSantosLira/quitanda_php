@@ -4,19 +4,19 @@ include "menu.php";
 
 
 <main>
-<?php
-     
+     <?php
+
      $nome =  "";
      include "conexao.php";
      $sql_buscar = "SELECT * FROM contato ORDER BY id DESC LIMIT 1";
      $todos_os_contato = mysqli_query($conexao, $sql_buscar);
-     while ($um_contato = mysqli_fetch_assoc($todos_os_contato)):
+     while ($um_contato = mysqli_fetch_assoc($todos_os_contato)) :
           $nome = $um_contato["nome"];
-         
-         
-         
-          
-         
+
+
+
+
+
      endwhile;
      mysqli_close($conexao);
      ?>
@@ -46,3 +46,7 @@ include "menu.php";
 
 
 </main>
+
+<div style="height: 273px;" class="d-block d-md-none"></div>
+<div style="height: 153px;" class="d-none d-md-block d-lg-none"></div>
+<div style="height: 129px;" class="d-none d-lg-block"></div>
