@@ -22,7 +22,7 @@ include "menu.php";
                             <td>Nome</td>
                             <td>Email</td>
                             <td>Mensagem</td>
-                            <td>Ver</td>
+                            <td>Visualizar</td>
                             <td>Excluir</td>
 
 

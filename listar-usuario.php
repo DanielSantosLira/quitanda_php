@@ -24,7 +24,7 @@ include "menu.php";
                             <td>Rua</td>
                             <td>Numero</td>
                             <td>Cidade</td>
-                            <td>Ver</td>
+                            <td>Visualizar</td>
                             <th>Editar</td>
                             <td>Deletar</td>
 

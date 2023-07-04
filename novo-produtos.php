@@ -21,7 +21,7 @@ include "menu.php";
                          <input type="valor" name="valor" class="form-control me-2" required placeholder="valor"> <br>
                          <input type="estoque" name="estoque" class="form-control me-2" required placeholder="estoque"> <br>
 
-                         <button type="submit" class="btn btn-danger">Salvar Produto</button>
+                         <button type="submit" class="btn btn-light btn-outline-danger">Salvar Produto</button>
                          <a href="painel.php" class="btn btn-light btn-outline-danger">Voltar</a>
 
                          <?php

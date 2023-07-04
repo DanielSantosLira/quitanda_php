@@ -35,8 +35,8 @@ include "menu.php";
             <p class="text-danger">Estoque:<small class="text-secondary"> <?php echo $estoque; ?></small> </p>
             </p>
             <p class="text-muted">Valor:<small class="text-danger"> <?php echo $valor; ?></small> </p>
-            <a href="<?php echo $video; ?>" class="btn bg-danger text-white">Adicionar ao Carinnho</a>
-            <a href="listar-produtos.php" class="btn btn-danger text-white">Voltar</a>
+            <a href="<?php echo $video; ?>" class="btn btn-light btn-outline-danger">Adicionar ao Carinnho</a>
+            <a href="listar-produtos.php" class="btn btn-light btn-outline-danger">Voltar</a>
         </div>
 
     </div>

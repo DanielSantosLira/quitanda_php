@@ -5,10 +5,11 @@ include "menu.php";
 <div class="container mt-3">
     <div class="row">
         <div class="col p-2">
-            <a href="listar-produtos.php" class="btn btn-danger">Gerenciar Produtos</a>
-            <a href="listar-usuario.php" class="btn btn-danger">Gerenciar Usuário</a>
-            <a href="listar-contato.php" class="btn btn-danger">Gerenciar Contatos</a>
-            <a href="novo-produtos.php" class="btn btn-danger">Cadastrar Produtos</a>
+            <a href="listar-produtos.php"class="btn btn-light btn-outline-danger ms-3">Gerenciar Produtos</a>
+            <a href="listar-usuario.php"class="btn btn-light btn-outline-danger  ms-3">Gerenciar Usuário</a>
+            <a href="listar-contato.php"class="btn btn-light btn-outline-danger  ms-3">Gerenciar Contatos</a>
+            <a href="novo-produtos.php"class="btn btn-light btn-outline-danger  ms-3">Cadastrar Produtos</a>
+            <a href="pdf/MANUAL QUITANDA ONLINE.pdf" target="_blank" class="btn btn-light btn-outline-danger  ms-3">Manual do usuário</a>
         </div>
     </div>
 </div>

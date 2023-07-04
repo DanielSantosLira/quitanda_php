@@ -20,7 +20,7 @@ include "menu.php";
                             <td>Categoria</td>
                             <td>Estoque</td>
                             <td>valor</td>
-                            <td>Produtos</td>
+                            <td>Visualizar</td>
                             <td>Editar</td>
                             <td>Deletar</td>
                         </tr>
