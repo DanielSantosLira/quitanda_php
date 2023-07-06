@@ -9,7 +9,7 @@ include "menu.php";
             <a href="listar-usuario.php"class="btn btn-light btn-outline-danger  ms-3">Gerenciar Usuário</a>
             <a href="listar-contato.php"class="btn btn-light btn-outline-danger  ms-3">Gerenciar Contatos</a>
             <a href="novo-produtos.php"class="btn btn-light btn-outline-danger  ms-3">Cadastrar Produtos</a>
-            <a href="pdf/MANUAL QUITANDA ONLINE.pdf" target="_blank" class="btn btn-light btn-outline-danger  ms-3">Manual do usuário</a>
+            <a href="pdf/MANUALDANIELMATHEUS.pdf" target="_blank" class="btn btn-light btn-outline-danger  ms-3">Manual do usuário</a>
         </div>
     </div>
 </div>

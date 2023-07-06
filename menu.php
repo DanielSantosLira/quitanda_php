@@ -92,14 +92,15 @@
                     <div class="col-12 col-md-4 text-center text-md-left text-secondary">
                          &copy;2023 - Quintanda Online Ltda Me<br>
                          Rua Virtual Inexistente, 171, Compulãndia/PC<br>
-                         CNPJ 99.999.999/0001-99
+                         CNPJ 99.999.999/0001-99 <br>
+                         Desenvolvido: ®Daniel Santos / ®Matheus Bortolotti
                     </div>
 
                     <div class="col-12 col-md text-center">
 
                          <a href="privacidade.php" class="text-decoration-none text-secondary">Política de
                               Privacidade</a><br>
-                         <a href="termos.php" class="text-decoration-none text-secondary">Termos de Usu</a><br>
+                         <a href="termos.php" class="text-decoration-none text-secondary">Termos de Uso</a><br>
                          <a href="quensomos.php" class="text-decoration-none text-secondary">Quem Somos</a><br>
                          <a href="troca.php" class="text-decoration-none text-secondary">Troca e Devoluçôes</a>
                     </div>
