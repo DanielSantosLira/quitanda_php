@@ -58,8 +58,8 @@ include "menu.php";
                 </div>
 
                 <div class="form-group mt-3">
-                    <button type="submit" class="btn btn-light btn-outline-danger"">Salvar</button>
-                    <a href="listar-produtos.php" class="btn btn-light btn-outline-danger">Voltar</a>
+                    <button type="submit" class="btn btn-light btn-outline-primary"">Salvar</button>
+                    <a href="listar-produtos.php" class="btn btn-light btn-outline-success">Voltar</a>
                 </div>
             </form>
 

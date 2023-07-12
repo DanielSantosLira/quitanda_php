@@ -26,7 +26,7 @@
 
 <body style="min-width:372px;">
 
-     <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom shadow-sm mb-3">
+     <nav class="navbar navbar-expand-lg navbar-dark bg-success border-bottom shadow-sm mb-3">
 
           <div class="container">
 

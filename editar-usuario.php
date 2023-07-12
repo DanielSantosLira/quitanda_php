@@ -94,8 +94,8 @@ include "menu.php";
 
                         <div class="form-group mt-3">
 
-                            <button type="submit" class="btn btn-light btn-outline-danger">Editar meu usuário</button>
-                            <a href="listar-usuario.php" class="btn btn-light btn-outline-danger">Voltar</a>
+                            <button type="submit" class="btn btn-light btn-outline-primary">Editar meu usuário</button>
+                            <a href="listar-usuario.php" class="btn btn-light btn-outline-success">Voltar</a>
 
                         </div>
 

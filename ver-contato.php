@@ -40,7 +40,7 @@ include "menu.php";
           </div>
           
           <div class="col-12">
-               <a href="listar-contato.php" class="btn btn-light btn-outline-danger">Voltar</a>
+               <a href="listar-contato.php" class="btn btn-light btn-outline-success">Voltar</a>
           </div>
      </div>
 

@@ -21,8 +21,8 @@ include "menu.php";
                          <input type="valor" name="valor" class="form-control me-2" required placeholder="valor"> <br>
                          <input type="estoque" name="estoque" class="form-control me-2" required placeholder="estoque"> <br>
 
-                         <button type="submit" class="btn btn-light btn-outline-danger">Salvar Produto</button>
-                         <a href="painel.php" class="btn btn-light btn-outline-danger">Voltar</a>
+                         <button type="submit" class="btn btn-light btn-outline-primary">Salvar Produto</button>
+                         <a href="painel.php" class="btn btn-light btn-outline-success">Voltar</a>
 
                          <?php
                          $mesagem = $_GET["msg"] ?? "";

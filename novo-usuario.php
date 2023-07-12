@@ -111,7 +111,7 @@ include "menu.php";
                </div>
                <div class="mb-3">
                     <a href="index.html" class="btn btn-light btn-outline-danger">Cancelar</a>
-                    <button type="submit" class="btn btn-danger">Salvar Usuário</button>
+                    <button type="submit" class="btn btn-outline-primary">Salvar Usuário</button>
 
                     <?php
                     $mesagem = $_GET["msg"] ?? "";

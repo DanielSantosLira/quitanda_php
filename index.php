@@ -66,7 +66,7 @@ include "menu.php"
                     <form action="" class="justify-content-center justify-content-md-start mb-3 mb-md-0">
                          <div class="input-group input-group-sm">
                               <input type="text" class="form-control" placeholder="Digite aqui o que procura">
-                              <button class="btn btn-danger">Buscar</button>
+                              <button class="btn btn-secondary">Buscar</button>
                          </div>
                     </form>
                </div>
@@ -172,7 +172,7 @@ include "menu.php"
 
                               <div class="card-footer">
 
-                                   <a href="carrinho.php?add=carrinho&id='$carrinho['id']" class="btn btn-danger">
+                                   <a href="carrinho.php?add=carrinho&id='$carrinho['id']" class="btn btn-warning">
                                         Adicionar ao Carrinho
                                    </a>
 

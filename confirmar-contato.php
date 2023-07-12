@@ -41,7 +41,7 @@ include "menu.php";
           </p>
 
 
-          <a href="index.php" class="btn btn-light btn-outline-danger">Voltar</a>
+          <a href="index.php" class="btn btn-light btn-outline-success">Voltar</a>
      </div>
 
 

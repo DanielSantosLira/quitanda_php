@@ -17,7 +17,7 @@ include "menu.php";
                 <div class="table-responsive">
                     <table class="table  table-hover-warning tabla-striped ">
 
-                        <tr class="bg-danger text-white">
+                        <tr class="bg-success text-white">
                             <td>id</td>
                             <td>Nome</td>
                             <td>Email</td>
@@ -48,7 +48,7 @@ include "menu.php";
 
 
                                 <td>
-                                    <a href="ver-contato.php?id=<?php echo $um_contato["id"]; ?>" class="btn btn-light btn-outline-danger">
+                                    <a href="ver-contato.php?id=<?php echo $um_contato["id"]; ?>" class="btn btn-light btn-outline-primary">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                                         </svg>
@@ -77,7 +77,7 @@ include "menu.php";
 
                     </table>
                     <div class="col-12">
-                        <a href="painel.php" class="btn btn-light btn-outline-danger">Voltar</a>
+                        <a href="painel.php" class="btn btn-light btn-outline-success">Voltar</a>
                     </div>
 
                 </div>

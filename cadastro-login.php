@@ -27,7 +27,7 @@ include "menu.php";
                          <label for="lembrar" class="form-check-label">Lembrar de mim</label>
                     </div>
 
-                    <button class="btn btn-lg btn-danger me-2" type="submit">Entar</button>
+                    <button class="btn btn-lg  btn-outline-success me-2" type="submit">Entar</button>
 
 
 
